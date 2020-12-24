@@ -1,45 +1,101 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# ¡Olé Spanish!
 
-Welcome USER_NAME,
+![¡Olé Spanish!](readme-files//)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+(description)
+You can visit the deployed website [here](https://fernandagil.github.io/ms2-olespanish-game/).
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+---
 
-`python3 -m http.server`
+## 1. UX
 
-A blue button should appear to click: *Make Public*,
+#### 1.1. Project Goals
 
-Another blue button should appear to click: *Open Browser*.
+This website was designed for (...)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+#### 1.2. User Stories
 
-Another blue button should appear to click: *Open Browser*.
+- As 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### 1.3. Wireframes
+The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
 
-## Updates Since The Instructional Video
+|    Desktop   |    Tablet    |    Mobile    |
+|    :----:    |     :----:   |    :----:    |
+|[Home Page](wireframes/desktop/....)|[Home Page](wireframes/tablet/home-tablet.png)|[Home Page](wireframes/mobile/home-mobile.png)|
+|[Menu Page](wireframes/desktop/menu-desktop.png)|[Menu Page](wireframes/tablet/menu-tablet.png)|[Menu Page](wireframes/mobile/menu-mobile.png)|
+|[About Page](wireframes/desktop/about-desktop.png)|[About Page](wireframes/tablet/about-tablet.png)|[About Page](wireframes/mobile/about-mobile.png)|
+|[Contact Page](wireframes/desktop/contact-desktop.png)|[Contact Page](wireframes/tablet/contact-tablet.png)|[Contact Page](wireframes/mobile/contact-mobile.png)|
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+---
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## 2. Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### 2.1. Existing features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### 2.2. Features left to implement in the future
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+---
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## 3. Technologies used
 
---------
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - provides the content and structure for my website.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - provides the styling.
+- [Bootstrap](https://getbootstrap.com/) - used to create the layout of the project.
+- [Balsamiq](https://balsamiq.com/) - used to create the project's wireframes.
+- [Gitpod](https://gitpod.io/) - used to develop the website.
+- [GitHub](https://github.com/) - used to host the project.
+- [Google Fonts](https://fonts.google.com/) - used to provide the fonts Josefin Slab for the main text, and Fredericka the Great for headers.
+- [Font Awesome](https://fontawesome.com/) - used the font awesome icons to style the information and the links in the footer, and also to make the Reservation section stand out a small bit.
+- [Canva](https://www.canva.com/) - used to design the restaurant's logo and icon.
+- [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
+- [Pixabay](https://pixabay.com/) and [Freepik](https://www.freepik.es/) - used to get images for the project.
+- [Picresize](https://picresize.com/) and [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to show in a quick visual way the responsiveness of the site.
+- [Autoprefixer](https://autoprefixer.github.io/) - used to parsethe CSS and to add vendor prefixes to CSS rules.
 
-Happy coding!
+## 4. Testing
+
+The testing process can be seen [here](TESTING.md).
+
+---
+
+## 5. Deployment
+
+**To deploy the project**
+
+This project is hosted in GitHub Pages
+
+1. On the menu on the top of the project’s repository on GitHub select **Settings**.
+2. Scroll down to the GitHub **Pages** section.
+3. Inside that section, click on the drop-down menu under **Source** and select **Master Branch**.
+4. The page refreshes automatically and the website is now deployed.
+5. The link to the webpage is just in the GitHub **Pages** section down below.
+
+Only one branch has been used for this project.
+
+**To run the project locally**
+
+To clone this project from GitHub:
+
+1. Under the repository’s name, click **Clone or download**.
+2. In the **Clone with hTTPS** section, copy the given URL.
+3. In your IDE of choice, open **Git Bash**.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type **git clone**, and then paste the URL copied from GitHub.
+6. Press **enter** and the local clone will be created.
+
+---
+
+## 6. Credits
+
+### 6.1. Content
+
+### 6.2. Media
+
+### 6.1. Acknowledgments
