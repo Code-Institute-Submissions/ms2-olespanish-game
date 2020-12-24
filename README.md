@@ -50,7 +50,7 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 - [Balsamiq](https://balsamiq.com/) - used to create the project's wireframes.
 - [Gitpod](https://gitpod.io/) - used to develop the website.
 - [GitHub](https://github.com/) - used to host the project.
-- [Google Fonts](https://fonts.google.com/) - used to provide the fonts Josefin Slab for the main text, and Fredericka the Great for headers.
+- [Google Fonts](https://fonts.google.com/) - used to provide the fonts Nixie One for the main text, and Fascinate Inline for some headers.
 - [Font Awesome](https://fontawesome.com/) - used the font awesome icons to style the information and the links in the footer, and also to make the Reservation section stand out a small bit.
 - [Canva](https://www.canva.com/) - used to design the restaurant's logo and icon.
 - [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
@@ -95,6 +95,8 @@ To clone this project from GitHub:
 ## 6. Credits
 
 ### 6.1. Content
+
+I took inspiration from [Diogo Realles' CodePen](https://codepen.io/SoftwaRealles/pen/dExjRW) to style the header.
 
 ### 6.2. Media
 
