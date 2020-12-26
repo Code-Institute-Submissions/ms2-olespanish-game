@@ -74,10 +74,11 @@ The testing process can be seen [here](TESTING.md).
 This project is hosted in GitHub Pages
 
 1. On the menu on the top of the project’s repository on GitHub select **Settings**.
-2. Scroll down to the GitHub **Pages** section.
+2. Scroll down to the **GitHub Pages** section.
 3. Inside that section, click on the drop-down menu under **Source** and select **Master Branch**.
-4. The page refreshes automatically and the website is now deployed.
-5. The link to the webpage is just in the GitHub **Pages** section down below.
+4. Click on the second drop-down to select **/(root)**.
+5. Click on **Save**.
+6. The link to the webpage is just in the same **GitHub Pages** section.
 
 Only one branch has been used for this project.
 
