@@ -116,3 +116,17 @@ article {
   font-family: 'Fascinate Inline', cursive;
   font-size: 1.5em;
 }
+
+/* VOCABULARY.HTML */
+.vocab-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.vocab-name {
+
+}
+
+.vocab-sound {
+
+}
