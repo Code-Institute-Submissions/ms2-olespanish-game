@@ -24,10 +24,12 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 
 |    Desktop   |    Tablet    |    Mobile    |
 |    :----:    |     :----:   |    :----:    |
-|[Home Page](wireframes/desktop/....)|[Home Page](wireframes/tablet/home-tablet.png)|[Home Page](wireframes/mobile/home-mobile.png)|
-|[Menu Page](wireframes/desktop/menu-desktop.png)|[Menu Page](wireframes/tablet/menu-tablet.png)|[Menu Page](wireframes/mobile/menu-mobile.png)|
-|[About Page](wireframes/desktop/about-desktop.png)|[About Page](wireframes/tablet/about-tablet.png)|[About Page](wireframes/mobile/about-mobile.png)|
-|[Contact Page](wireframes/desktop/contact-desktop.png)|[Contact Page](wireframes/tablet/contact-tablet.png)|[Contact Page](wireframes/mobile/contact-mobile.png)|
+|[Home Page](readme-files/wireframes/desktop/desktop-home.jpg)|[Home Page]()|[Home Page]()|
+|[Instructions Page](readme-files/wireframes/desktop/desktop-instructions.jpg)|
+|[Refresh Vocabulary Page](readme-files/wireframes/desktop/desktop-vocabulary.jpg)|
+|[Choose Level Page](readme-files/wireframes/desktop/desktop-levels.jpg)|
+|[Beginner Level Page](readme-files/wireframes/desktop/desktop-beginner.jpg)|
+|[Intermediate and Advanced Levels Page](readme-files/wireframes/desktop/desktop-intermediate-advanced.jpg)|
 
 ---
 

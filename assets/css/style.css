@@ -56,7 +56,7 @@ article {
 .menu-container {
   height: 100px;
   background-image: url("../images/ole-bg.png");
-  border-style: double #FCFCFC;
+  border-style: 5px solid #FCFCFC;
   text-align: center;
   display: block;
 }
@@ -82,7 +82,7 @@ article {
   background: #FCFCFC;
   text-align: center;
   padding: 10px;
-  border-bottom: 5px double #FBD2D0;
+  border-bottom: 5px solid #FBD2D0;
 }
 
 .title {
@@ -95,8 +95,8 @@ article {
 }
 
 .heading-container {
-  background-image: url("../images/ole-bg3.png");
-  border: 5px double #FCFCFC;
+  background-image: url("../images/ole-bg.png");
+  border: 5px solid #FCFCFC;
   margin-bottom: 10px;
 }
 
@@ -118,13 +118,19 @@ article {
 }
 
 /* VOCABULARY.HTML */
+.vocab-element {
+  margin: 10px;
+}
+
 .vocab-img {
   width: 100%;
   border-radius: 50%;
 }
 
 .vocab-name {
-
+  margin: 15px 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .vocab-sound {
