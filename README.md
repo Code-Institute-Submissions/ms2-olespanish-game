@@ -2,9 +2,9 @@
 
 ![¡Olé Spanish!](readme-files//)
 
-(description)
-You can visit the deployed website [here](https://fernandagil.github.io/ms2-olespanish-game/).
+¡Olé Spanish! memory game is a great way to practice Spanish vocabulary while having fun. This memory game will test both your vocabulary and your memory.
 
+You can visit the deployed website [here](https://fernandagil.github.io/ms2-olespanish-game/).
 
 ---
 
@@ -12,7 +12,26 @@ You can visit the deployed website [here](https://fernandagil.github.io/ms2-oles
 
 #### 1.1. Project Goals
 
-This website was designed for (...)
+This game was designed for students of all ages learning the Spanish language. There are 3 levels that increase in difficulty:
+- Beginners
+
+In this level, every card provides 3 different pieces of information: a picture, a name and a pronunciation clip. 
+
+- Intermediate
+
+In this level, every card provides the same 3 different pieces of information, but adding 8 more cards (4 new words).
+
+Both the Beginners and Intermediate levels are suitable for kids and people who can’t read, since they can match the cards by just looking at the pictures and/or listening to the voice clip.
+
+- Advanced
+
+In this level, every card provides 2 pieces of information: a name and a pronunciation clip. I left out the visual help to increase the difficulty and to help students focus more on the actual word and try to memorize them while playing. 
+
+This project’s main goals are:
+- to learn new words
+- to strengthen memory
+- to have fun!
+
 
 
 #### 1.2. User Stories
@@ -53,13 +72,13 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 - [Gitpod](https://gitpod.io/) - used to develop the website.
 - [GitHub](https://github.com/) - used to host the project.
 - [Google Fonts](https://fonts.google.com/) - used to provide the fonts Nixie One for the main text, and Fascinate Inline for some headers.
-- [Font Awesome](https://fontawesome.com/) - used the font awesome icons to style the information and the links in the footer, and also to make the Reservation section stand out a small bit.
-- [Canva](https://www.canva.com/) - used to design the restaurant's logo and icon.
+- [Font Awesome](https://fontawesome.com/) - used the Font Awesome icons to hear the voice clip in the Refresh Vocabulary page.
+- [Canva](https://www.canva.com/) - used to design all the cards for all levels, the game's logo and icon.
 - [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
-- [Pixabay](https://pixabay.com/) and [Freepik](https://www.freepik.es/) - used to get images for the project.
-- [Picresize](https://picresize.com/) and [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images.
-- [Am I Responsive?](http://ami.responsivedesign.is/) - used to show in a quick visual way the responsiveness of the site.
-- [Autoprefixer](https://autoprefixer.github.io/) - used to parsethe CSS and to add vendor prefixes to CSS rules.
+- [Pixabay](https://pixabay.com/) - used to get images for the project.
+- [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images and icon before making it a Favicon.
+- [HTML Color Codes] https://html-color-codes.info/: to select colours codes from an image to create the website's colour palette.
+
 
 ## 4. Testing
 
