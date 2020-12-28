@@ -13,28 +13,25 @@
   </head>
 
   <body>
-     <!-- MAIN BODY -->
+    <div class="container-fluid top-container">
+      <a class="navbar-brand fixed-top" href="index.html">
+        <h1 class="title">¡Olé Spanish!</h1>
+      </a>
+    </div>
+      
     <article>
-      <div class="container logo-container">
-        <a class="navbar-brand" href="index.html">
-          <h1 class="main-title">¡Olé Spanish!</h1>
-          <p class="subtitle">Memory Game</p>
-        </a>
-      </div>
-
-      <div class="container menu-container">
+      <div class="container game-menu-container">
         <div class="row">
-            <div class="col-12 col-md-4 menu-element">
-              <a href="instructions.html">Instructions</a>
-            </div>
-            <div class="col-12 col-md-4 menu-element">
-                <a href="vocabulary.html">Refresh vocabulary</a>
-            </div>
-            <div class="col-12 col-md-4 menu-element">
-                <a href="game.html">Play</a>
-            </div>
+          <h4>Time: <span id="time"></span></h4>
+          <h4>Flips: <span id="flips"></span></h4>
+          <h4>Score: <span id="result"></span></h4>
+          <h4></h4>
         </div>
       </div>
+
+      <div class="container game-container">
+        <div class="grid"></div>
+      </div> 
     </article>
 
     <!-- FOOTER -->
@@ -42,8 +39,9 @@
 
     </footer>
 
-    <!-- BOOTSTRAP'S SCRIPTS -->
+    <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-  </body>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
