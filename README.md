@@ -25,7 +25,7 @@ Both the Beginners and Intermediate levels are suitable for kids and people who 
 
 - Advanced
 
-In this level, every card provides 2 pieces of information: a name and a pronunciation clip. I left out the visual help to increase the difficulty and to help students focus more on the actual word and try to memorize them while playing. 
+In this level, the user has to match a card with an image with a card with the corresponding name and pronunciation. This would be the final test for students to prove what they know and to help them focus more on the actual word and try to memorize them while playing and having fun. 
 
 This project’s main goals are:
 - to learn new words
@@ -77,7 +77,8 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 - [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
 - [Pixabay](https://pixabay.com/) - used to get images for the project.
 - [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images and icon before making it a Favicon.
-- [HTML Color Codes] https://html-color-codes.info/: to select colours codes from an image to create the website's colour palette.
+- [HTML Color Codes](https://html-color-codes.info/){:target="_blank"}: to select colours codes from an image to create the website's colour palette.
+- <a href="https://html-color-codes.info/" target="_blank">HTML Color Codes</a>
 
 
 ## 4. Testing
