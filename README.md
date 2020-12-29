@@ -121,6 +121,8 @@ To clone this project from GitHub:
 
 I took inspiration from [Diogo Realles' CodePen](https://codepen.io/SoftwaRealles/pen/dExjRW) to style the header.
 
+The neon effect buttons were created following [Coding Tuting](https://www.codingtuting.com/2019/09/neon-buttons-pure-css.html) and style to suit the project's needs.
+
 ### 6.2. Media
 
 ### 6.1. Acknowledgments
