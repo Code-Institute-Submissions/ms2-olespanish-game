@@ -107,7 +107,7 @@ button {
 
 .menu-container {
   background-image: url("../images/ole-bg.png");
-  border-style: 5px solid #FCFCFC;
+  border-color: 5px solid #FCFCFC;
   text-align: center;
   display: block;
 }
@@ -139,7 +139,8 @@ button {
 .heading-container {
   background-image: url("../images/ole-bg.png");
   border: 5px solid #FCFCFC;
-  margin-bottom: 10px;
+  margin-top: 8rem;
+  margin-bottom: 20px;
 }
 
 .heading {
@@ -152,6 +153,7 @@ button {
   background: #FCFCFC;
   text-align: center;
   display: block;
+  margin-bottom: 3rem;
 }
 
 .level-name {
@@ -198,3 +200,22 @@ button {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  .heading-container {
+    margin-top: 80rem;
+}
+
+/* Small devices */
+@media only screen and (min-width: 600px) {
+  .heading-container {
+    margin-top:600rem;
+}
+
+/* Medium devices  */
+@media only screen and (min-width: 768px) {
+  .heading-container {
+    margin-top: 40rem;
+}
+

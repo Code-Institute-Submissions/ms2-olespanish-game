@@ -7,7 +7,7 @@ const cardBeginner = [
     },
     {
       name: 'fresa',
-      img: '..images/text-and-img-fresa.png'
+      img: '..images/text-and-img-fresa.jpg'
     },
     {
       name: 'kiwi',
@@ -15,11 +15,11 @@ const cardBeginner = [
     },
     {
       name: 'limon',
-      img: '..images/text-and-img-limon.png'
+      img: '..images/text-and-img-limon.jpg'
     },
     {
       name: 'manzana',
-      img: '..images/text-and-img-manzana.png'
+      img: '..images/text-and-img-manzana.jpg'
     },
     {
       name: 'melocoton',
@@ -27,7 +27,7 @@ const cardBeginner = [
     },
     {
       name: 'naranja',
-      img: '..images/text-and-img-naranja.png'
+      img: '..images/text-and-img-naranja.jpg'
     },
     {
       name: 'pera',
@@ -35,11 +35,11 @@ const cardBeginner = [
     },
     {
       name: 'platano',
-      img: '..images/text-and-img-platano.png'
+      img: '..images/text-and-img-platano.jpg'
     },
     {
       name: 'sandia',
-      img: '..images/text-and-img-sandia.png'
+      img: '..images/text-and-img-sandia.jpg'
     }
   ];
 
