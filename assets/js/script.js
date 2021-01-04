@@ -42,17 +42,17 @@ const cardsArray = [
   }
 ];
 
-// Global variables
-let count = 0;
-let firstGuess = '';
-let secondGuess = '';
-let previousTarget = null;
-  let delay = 900;
-
 // Duplicate array to create a match for each card
 let gameGrid = cardsArray.concat(cardsArray);
 // Randomize game grid on each load
 gameGrid.sort(() => 0.5 - Math.random());
+
+// Global variables
+let firstGuess = '';
+let secondGuess = '';
+let count = 0;
+let previousTarget = null;
+let delay = 900;
 
 // Grab the div with an id of root
 const game = document.getElementById('game');
@@ -63,24 +63,24 @@ grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
 // For each item in the cardsArray array
-gameGrid.forEach((item) => {
+gameGrid.forEach(item => {
   const card = document.createElement('div'); // Create a div
   card.classList.add('card'); // Apply a card class to that div
   card.dataset.name = item.name; // Set the data-name attribute of the div to the cardsArray name
   
   // Create back of card
   const back = document.createElement('div');
-  front.classList.add('back');
+  back.classList.add('back');
 
-  // Create front of card, which contains
+  // Create front of card
   const front = document.createElement('div')
-  back.classList.add('front');
-  back.style.backgroundImage = `url(${item.img})`;
+  front.classList.add('front');
+  front.style.backgroundImage = `url(${item.img})`;
 
   // Append card to grid, and front and back to each card
   grid.appendChild(card);
-  card.appendChild(front);
   card.appendChild(back);
+  card.appendChild(front);
 });
 
 // Add match CSS
@@ -110,9 +110,8 @@ grid.addEventListener('click', function (event) {
   if (
     clicked.nodeName === 'SECTION' || 
     clicked === previousTarget ||
-    clicked.parentNode.classList.contains('selected')
-  ) {
-    return;
+    clicked.parentNode.classList.contains('selected')) {
+      return;
   }
 
   if (count < 2) {
@@ -120,17 +119,16 @@ grid.addEventListener('click', function (event) {
     if (count === 1) {
       // Assign first guess
       firstGuess = clicked.parentNode.dataset.name;
-      console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name;
-      console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
     }
+
     // If both guesses are not empty...
     if (firstGuess !== '' && secondGuess !== '') {
-      // and the first guess matches the second match...
+      // and the first guess matches the second match
       if (firstGuess === secondGuess) {
         setTimeout(match, delay);
         setTimeout(resetGuesses, delay);

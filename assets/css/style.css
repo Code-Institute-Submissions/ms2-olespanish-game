@@ -205,6 +205,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .card {
@@ -222,7 +224,7 @@ button {
 }
 
 .back {
-  background: url('../img/back-card.png') no-repeat center center /
+  background: url("../images/back-card.png") no-repeat center center /
     contain;
 }
 
@@ -237,6 +239,7 @@ button {
 .card, .back, .front {
   height: 150px;
   width: 150px;
+  border-radius: 15px;
 }
 
 .back, .front {
@@ -253,10 +256,6 @@ button {
 
 .match {
   background-image: none !important;
-}
-
-.match, .back {
-  background: #FCFCFC !important;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
