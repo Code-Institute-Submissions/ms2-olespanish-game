@@ -42,6 +42,9 @@ const cardsArray = [
   }
 ];
 
+// Global variables
+let count = 0;
+
 // Duplicate array to create a match for each card
 let gameGrid = cardsArray.concat(cardsArray);
 // Randomize game grid on each load
@@ -65,4 +68,19 @@ gameGrid.forEach(item => {
   card.style.backgroundImage = `url(${item.img})`; // Apply the background image of the div to the cardsArray image
 
   grid.appendChild(card); // Append the div to the grid section
+});
+
+// Add event listener to grid
+grid.addEventListener('click', function (event) {
+  let clicked = event.target; // The event target is our clicked item
+
+  // Do not allow the grid section itself to be selected; only select divs inside the grid
+  if (clicked.nodeName === 'SECTION') {
+    return;
+  }
+
+  if (count < 2) {
+    count++;
+    clicked.classList.add('selected'); // Add selected class
+  }
 });
