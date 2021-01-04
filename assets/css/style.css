@@ -224,6 +224,10 @@ button {
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F7ACA8, 0 0 40px #F7ACA8, 0 0 50px #F7ACA8, 0 0 60px #F7ACA8, 0 0 70px #F7ACA8;
 }
 
+.match {
+  background-image: none !important;
+}
+
 /* ---------- MEDIA QUERIES ---------- */
 
 /* Extra small devices */
