@@ -200,19 +200,33 @@ button {
 }
 
 .grid {
-    height: 500px;
-    width: 600px;
-    background: #FCFCFC;
-    display: flex;
-    flex-wrap: wrap;
+  /* height: 500px;
+  width: 600px; */
+  background: #FCFCFC;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 5px;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: #FCFCFC;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
-  img, .body {
-    font-size: 0.5rem;
+  img, body {
+    font-size: 0.7rem;
+  }
+  .main-title {
+    font-size: 50px;
   }
   .heading-container {
     margin-top: 80rem;
@@ -221,8 +235,11 @@ button {
 
 /* Small devices */
 @media only screen and (min-width: 600px) {
-  img, .body {
-    font-size: 0.7rem;
+  img, body {
+    font-size: 0.8rem;
+  }
+  .main-title {
+    font-size: 60px;
   }
   .heading-container {
     margin-top: 40rem;
@@ -231,8 +248,11 @@ button {
 
 /* Medium devices  */
 @media only screen and (min-width: 768px) {
-  img, .body {
+  img, body {
     font-size: 0.9rem;
+  }
+  .main-title {
+    font-size: 70px;
   }
   .heading-container {
     margin-top: 20rem;
