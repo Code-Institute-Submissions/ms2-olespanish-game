@@ -191,8 +191,7 @@ button {
   margin-bottom: 20px;
 }
 
-.game-menu-area, 
-.game-grid-area {
+.game-menu-area, .game-grid-area {
   background: #FCFCFC66;
   min-height: 200px;
   max-width: 1000px;
@@ -216,16 +215,48 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  border: hidden;
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+}
+
+.back {
+  background: url('../img/back-card.png') no-repeat center center /
+    contain;
+}
+
+.front {
+  transform: rotateY(180deg);
+  background-color: #FCFCFC;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card, .back, .front {
+  height: 150px;
+  width: 150px;
+}
+
+.back, .front {
+  position: absolute;
+  backface-visibility: hidden;
 }
 
 .selected {
   -webkit-box-shadow: inset 0px 0px 8px 3px #F7ACA8;
   box-shadow: 0px 0px 10px 3px #F7ACA8, inset 0px 0px 10px 3px #F7ACA8;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F7ACA8, 0 0 40px #F7ACA8, 0 0 50px #F7ACA8, 0 0 60px #F7ACA8, 0 0 70px #F7ACA8;
+  transform: rotateY(180deg);
 }
 
 .match {
   background-image: none !important;
+}
+
+.match, .back {
+  background: #FCFCFC !important;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
