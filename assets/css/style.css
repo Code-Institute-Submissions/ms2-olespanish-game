@@ -37,7 +37,7 @@ a {
 }
 
 img {
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -198,6 +198,10 @@ button {
   margin: 10px;
 }
 
+.game-info {
+  padding: 20px auto;
+}
+
 .grid {
   /* height: 500px;
   width: 600px; */
@@ -211,8 +215,6 @@ button {
 
 .card {
   margin: 5px;
-  min-width: 150px;
-  min-height: 150px;
   background-color: #FCFCFC;
   background-size: contain;
   background-repeat: no-repeat;
@@ -226,6 +228,7 @@ button {
 .back {
   background: url("../images/back-card.png") no-repeat center center /
     contain;
+  box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
 }
 
 .front {
@@ -237,8 +240,8 @@ button {
 }
 
 .card, .back, .front {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   border-radius: 15px;
 }
 
@@ -265,11 +268,24 @@ button {
   img, body {
     font-size: 0.7rem;
   }
+  .container {
+    padding: 0;
+  }
   .main-title {
     font-size: 50px;
   }
   .heading-container {
     margin-top: 80rem;
+  }
+  .game-menu-area {
+    min-height: 50px;
+  }
+  .grid {
+    padding: 0;
+  }
+  .card, .back, .front {
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -284,6 +300,16 @@ button {
   .heading-container {
     margin-top: 40rem;
   }
+  .game-menu-area {
+    min-height: 50px;
+  }
+  .grid {
+    padding: 5px;
+  }
+  .card, .back, .front {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 /* Medium devices  */
@@ -296,5 +322,9 @@ button {
   }
   .heading-container {
     margin-top: 20rem;
+  }
+  .card, .back, .front {
+    height: 100px;
+    width: 100px;
   }
 }
