@@ -2,43 +2,53 @@
 const cardsArray = [
   {
     name: 'coco',
-    img: 'assets/images/text-and-img-coco.png'
+    img: 'assets/images/text-and-img-coco.png',
+    audio: 'assets/audio/coco.mp3'
   },
   {
     name: 'fresa',
-    img: 'assets/images/text-and-img-fresa.jpg'
+    img: 'assets/images/text-and-img-fresa.jpg',
+    audio: 'assets/audio/fresa.mp3'
   },
   {
     name: 'kiwi',
-    img: 'assets/images/text-and-img-kiwi.png'
+    img: 'assets/images/text-and-img-kiwi.png',
+    audio: 'assets/audio/kiwi.mp3'
   },
   {
     name: 'limon',
-    img: 'assets/images/text-and-img-limon.jpg'
+    img: 'assets/images/text-and-img-limon.jpg',
+    audio: 'assets/audio/limon.mp3'
   },
   {
     name: 'manzana',
-    img: 'assets/images/text-and-img-manzana.jpg'
+    img: 'assets/images/text-and-img-manzana.jpg',
+    audio: 'assets/audio/manzana.mp3'
   },
   {
     name: 'melocoton',
-    img: 'assets/images/text-and-img-melocoton.png'
+    img: 'assets/images/text-and-img-melocoton.png',
+    audio: 'assets/audio/melocoton.mp3'
   },
   {
     name: 'naranja',
-    img: 'assets/images/text-and-img-naranja.jpg'
+    img: 'assets/images/text-and-img-naranja.jpg',
+    audio: 'assets/audio/naranja.mp3'
   },
   {
     name: 'pera',
-    img: 'assets/images/text-and-img-pera.png'
+    img: 'assets/images/text-and-img-pera.png',
+    audio: 'assets/audio/pera.mp3'
   },
   {
     name: 'platano',
-    img: 'assets/images/text-and-img-platano.jpg'
+    img: 'assets/images/text-and-img-platano.jpg',
+    audio: 'assets/audio/platano.mp3'
   },
   {
     name: 'sandia',
-    img: 'assets/images/text-and-img-sandia.jpg'
+    img: 'assets/images/text-and-img-sandia.jpg',
+    audio: 'assets/audio/sandia.mp3'
   }
 ];
 

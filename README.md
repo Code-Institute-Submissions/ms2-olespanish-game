@@ -77,9 +77,10 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 - [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
 - [Pixabay](https://pixabay.com/) - used to get images for the project.
 - [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images and icon before making it a Favicon.
-- [HTML Color Codes](https://html-color-codes.info/){:target="_blank"}: to select colours codes from an image to create the website's colour palette.
-- <a href="https://html-color-codes.info/" target="_blank">HTML Color Codes</a>
+- [HTML Color Codes](https://html-color-codes.info/): to select colours codes from an image to create the website's colour palette.
+- [Text 2 MP3](https://www.texttomp3.online/): to generate the vocabulary words' pronunciation.
 
+---
 
 ## 4. Testing
 
@@ -122,6 +123,8 @@ To clone this project from GitHub:
 I took inspiration from [Diogo Realles' CodePen](https://codepen.io/SoftwaRealles/pen/dExjRW) to style the header.
 
 The neon effect buttons were created following [Coding Tuting](https://www.codingtuting.com/2019/09/neon-buttons-pure-css.html) and style to suit the project's needs.
+
+The sound effects were implemented with help from [Button Sound Effects Tutorial](https://www.youtube.com/watch?v=VlwSz2dXK_8&ab_channel=AdamKhoury).
 
 ### 6.2. Media
 

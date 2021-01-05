@@ -59,7 +59,7 @@ button {
   height: 80px;
   border-radius: 15px;
   background-color: #FCFCFC;
-  margin-bottom: 5px;
+  margin: 5px auto;
 }
 
 .neon-btn {
@@ -100,6 +100,7 @@ button {
   font-family: 'Nixie One', cursive;
   text-transform: uppercase;
   letter-spacing: 15px;
+  padding-bottom: 10px;
 }
 
 .menu-container {
@@ -144,14 +145,17 @@ button {
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Fascinate Inline', cursive;
+  padding: 5px;
+  text-align: center;
 }
 
 .text-container {
   background: #FCFCFC;
   text-align: center;
   display: block;
+  padding: 20px 5px;
   margin-bottom: 3rem;
 }
 
@@ -163,7 +167,7 @@ button {
 /* ---------- VOCABULARY.HTML ---------- */
 
 .vocab-element {
-  margin: 10px;
+  padding: 10px;
 }
 
 .vocab-img {
@@ -178,7 +182,14 @@ button {
 }
 
 .vocab-sound {
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-bottom: 5px;
+}
 
+.vocab-sound:hover {
+  font-size: 150%;
 }
 
 /* ---------- GAME.HTML ---------- */
@@ -275,7 +286,7 @@ button {
     font-size: 50px;
   }
   .heading-container {
-    margin-top: 80rem;
+    margin-top: 60rem;
   }
   .game-menu-area {
     min-height: 50px;
@@ -298,7 +309,7 @@ button {
     font-size: 60px;
   }
   .heading-container {
-    margin-top: 40rem;
+    margin-top: 50rem;
   }
   .game-menu-area {
     min-height: 50px;
