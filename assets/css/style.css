@@ -23,7 +23,7 @@ article {
 }
 
 .container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
   padding: 30px;
   display: flex;
@@ -140,7 +140,7 @@ button {
 .heading-container {
   background-image: url("../images/ole-bg.png");
   border: 5px solid #FCFCFC;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   margin-bottom: 20px;
 }
 
@@ -155,7 +155,7 @@ button {
   background: #FCFCFC;
   text-align: center;
   display: block;
-  padding: 20px 5px;
+  padding: 20px;
   margin-bottom: 3rem;
 }
 
@@ -286,7 +286,7 @@ button {
     font-size: 50px;
   }
   .heading-container {
-    margin-top: 60rem;
+    margin-top: 20rem;
   }
   .game-menu-area {
     min-height: 50px;
@@ -309,7 +309,7 @@ button {
     font-size: 60px;
   }
   .heading-container {
-    margin-top: 50rem;
+    /* margin-top: 50rem; */
   }
   .game-menu-area {
     min-height: 50px;
@@ -332,7 +332,7 @@ button {
     font-size: 70px;
   }
   .heading-container {
-    margin-top: 20rem;
+    /* margin-top: 20rem; */
   }
   .card, .back, .front {
     height: 100px;

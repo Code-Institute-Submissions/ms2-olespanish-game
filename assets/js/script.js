@@ -64,24 +64,6 @@ let count = 0;
 let previousTarget = null;
 let delay = 900;
 
-// Set timer and call the function every second
-const startingMinutes = 2;
-let time = startingMinutes * 60;
-const countdownEl = document.getElementById('time');
-
-setInterval(updateCountdown, 1000);
-
-function updateCountdown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  seconds = seconds < 10 ? '0' + seconds : seconds;
-
-  countdownEl.innerHTML = `${minutes}: ${seconds}`;
-  time--;
-}
-
-
 // Grab the div with an id of root
 const game = document.getElementById('game');
 // Create a section with a class of grid
@@ -101,7 +83,7 @@ gameGrid.forEach(item => {
   back.classList.add('back');
 
   // Create front of card
-  const front = document.createElement('div')
+  const front = document.createElement('div');
   front.classList.add('front');
   front.style.backgroundImage = `url(${item.img})`;
 
@@ -165,6 +147,22 @@ grid.addEventListener('click', function (event) {
       }
     }
     // Set previous target to clicked
-      previousTarget = clicked;
+    previousTarget = clicked;
   }
 });
+
+// Set timer and call the function every second
+const startingMinutes = 1;
+let time = startingMinutes * 60;
+const countdownEl = document.getElementById('time');
+let interval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  countdownEl.innerHTML = `${minutes}: ${seconds}`;
+  time !== 0 ? time-- : time;
+}

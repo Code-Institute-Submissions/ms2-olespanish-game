@@ -43,12 +43,10 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 
 |    Desktop   |    Tablet    |    Mobile    |
 |    :----:    |     :----:   |    :----:    |
-|[Home Page](readme-files/wireframes/desktop/desktop-home.jpg)|[Home Page]()|[Home Page]()|
-|[Instructions Page](readme-files/wireframes/desktop/desktop-instructions.jpg)|
-|[Refresh Vocabulary Page](readme-files/wireframes/desktop/desktop-vocabulary.jpg)|
-|[Choose Level Page](readme-files/wireframes/desktop/desktop-levels.jpg)|
-|[Beginner Level Page](readme-files/wireframes/desktop/desktop-beginner.jpg)|
-|[Intermediate and Advanced Levels Page](readme-files/wireframes/desktop/desktop-intermediate-advanced.jpg)|
+|[Home Page](readme-files/wireframes/desktop-home.jpg)|[Home Page](readme-files/wireframes/tablet-home.jpg)|[Home Page](readme-files/wireframes/mobile-home.jpg)|
+|[Instructions Page](readme-files/wireframes/desktop-instructions.jpg)|[Instructions Page](readme-files/wireframes/tablet-instructions.jpg)|[Instructions Page](readme-files/wireframes/mobile-instructions.jpg)|
+|[Refresh Vocabulary Page](readme-files/wireframes/desktop-vocabulary.jpg)|[Refresh Vocabulary Page](readme-files/wireframes/tablet-vocabulary.jpg)|[Refresh Vocabulary Page](readme-files/wireframes/mobile-vocabulary.jpg)|
+|[Game Page](readme-files/wireframes/desktop-game.jpg)|[Game Page](readme-files/wireframes/tablet-game.jpg)|[Game Page](readme-files/wireframes/mobile-game.jpg)|
 
 ---
 
@@ -125,6 +123,7 @@ I took inspiration from [Diogo Realles' CodePen](https://codepen.io/SoftwaRealle
 The neon effect buttons were created following [Coding Tuting](https://www.codingtuting.com/2019/09/neon-buttons-pure-css.html) and style to suit the project's needs.
 
 The sound effects were implemented with help from [Button Sound Effects Tutorial](https://www.youtube.com/watch?v=VlwSz2dXK_8&ab_channel=AdamKhoury).
+I created the timer function with help from [Simple Countdown Timer with JavaScript](https://www.youtube.com/watch?v=x7WJEmxNlEs&ab_channel=CodewithAniaKub%C3%B3w).
 
 ### 6.2. Media
 
