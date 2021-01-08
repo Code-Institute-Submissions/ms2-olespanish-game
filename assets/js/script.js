@@ -2,53 +2,43 @@
 const cardsArray = [
   {
     name: 'coco',
-    img: 'assets/images/text-and-img-coco.png',
-    audio: 'assets/audio/coco.mp3'
+    img: 'assets/images/text-and-img-coco.png'
   },
   {
     name: 'fresa',
-    img: 'assets/images/text-and-img-fresa.jpg',
-    audio: 'assets/audio/fresa.mp3'
+    img: 'assets/images/text-and-img-fresa.jpg'
   },
   {
     name: 'kiwi',
-    img: 'assets/images/text-and-img-kiwi.png',
-    audio: 'assets/audio/kiwi.mp3'
+    img: 'assets/images/text-and-img-kiwi.png'
   },
   {
     name: 'limon',
-    img: 'assets/images/text-and-img-limon.jpg',
-    audio: 'assets/audio/limon.mp3'
+    img: 'assets/images/text-and-img-limon.jpg'
   },
   {
     name: 'manzana',
-    img: 'assets/images/text-and-img-manzana.jpg',
-    audio: 'assets/audio/manzana.mp3'
+    img: 'assets/images/text-and-img-manzana.jpg'
   },
   {
     name: 'melocoton',
-    img: 'assets/images/text-and-img-melocoton.png',
-    audio: 'assets/audio/melocoton.mp3'
+    img: 'assets/images/text-and-img-melocoton.png'
   },
   {
     name: 'naranja',
-    img: 'assets/images/text-and-img-naranja.jpg',
-    audio: 'assets/audio/naranja.mp3'
+    img: 'assets/images/text-and-img-naranja.jpg'
   },
   {
     name: 'pera',
-    img: 'assets/images/text-and-img-pera.png',
-    audio: 'assets/audio/pera.mp3'
+    img: 'assets/images/text-and-img-pera.png'
   },
   {
     name: 'platano',
-    img: 'assets/images/text-and-img-platano.jpg',
-    audio: 'assets/audio/platano.mp3'
+    img: 'assets/images/text-and-img-platano.jpg'
   },
   {
     name: 'sandia',
-    img: 'assets/images/text-and-img-sandia.jpg',
-    audio: 'assets/audio/sandia.mp3'
+    img: 'assets/images/text-and-img-sandia.jpg'
   }
 ];
 
@@ -62,22 +52,19 @@ let firstGuess = '';
 let secondGuess = '';
 let count = 0;
 let previousTarget = null;
-let delay = 900;
+let delay = 1000;
 
-// Grab the div with an id of root
 const game = document.getElementById('game');
-// Create a section with a class of grid
 const grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
-// Append the grid section to the game div
 game.appendChild(grid);
 
 // For each item in the cardsArray array
-gameGrid.forEach(item => {
-  const card = document.createElement('div'); // Create a div
-  card.classList.add('card'); // Apply a card class to that div
-  card.dataset.name = item.name; // Set the data-name attribute of the div to the cardsArray name
-  
+gameGrid.forEach(function (item) {
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.dataset.name = item.name; 
+
   // Create back of card
   const back = document.createElement('div');
   back.classList.add('back');
@@ -94,20 +81,21 @@ gameGrid.forEach(item => {
 });
 
 // Add match CSS
-const match = () => {
+const match = function match() {
   var selected = document.querySelectorAll('.selected');
-  selected.forEach((card) => {
+  selected.forEach(function (card) {
     card.classList.add('match');
   });
 }
 
-const resetGuesses = () => {
+const resetGuesses = function resetGuesses() {
   firstGuess = '';
   secondGuess = '';
   count = 0;
+  previousTarget = null;
   
   var selected = document.querySelectorAll('.selected');
-  selected.forEach((card) => {
+  selected.forEach(function (card) {
     card.classList.remove('selected');
   });
 }
@@ -129,14 +117,16 @@ grid.addEventListener('click', function (event) {
     if (count === 1) {
       // Assign first guess
       firstGuess = clicked.parentNode.dataset.name;
+      console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name;
+      console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
     }
 
-    // If both guesses are not empty...
+    // If both guesses are not empty
     if (firstGuess !== '' && secondGuess !== '') {
       // and the first guess matches the second match
       if (firstGuess === secondGuess) {
@@ -152,17 +142,17 @@ grid.addEventListener('click', function (event) {
 });
 
 // Set timer and call the function every second
-const startingMinutes = 1;
-let time = startingMinutes * 60;
-const countdownEl = document.getElementById('time');
-let interval = setInterval(updateCountdown, 1000);
+// const startingMinutes = 1;
+// let time = startingMinutes * 60;
+// const countdownEl = document.getElementById('time');
+// let interval = setInterval(updateCountdown, 1000);
 
-function updateCountdown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+// function updateCountdown() {
+//   const minutes = Math.floor(time / 60);
+//   let seconds = time % 60;
 
-  seconds = seconds < 10 ? '0' + seconds : seconds;
+//   seconds = seconds < 10 ? '0' + seconds : seconds;
 
-  countdownEl.innerHTML = `${minutes}: ${seconds}`;
-  time !== 0 ? time-- : time;
-}
+//   countdownEl.innerHTML = `${minutes}: ${seconds}`;
+//   time !== 0 ? time-- : time;
+// }
