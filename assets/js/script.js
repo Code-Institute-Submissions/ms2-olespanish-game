@@ -53,6 +53,14 @@ let cardsWon = [];
 let count = 0;
 let previousTarget = null;
 let delay = 1000;
+let flips = document.getElementById('flips');
+let moves;
+let timer = document.getElementById('time');
+let second = 0;
+let minute = 0;
+let hour = 0;
+let interval;
+let totalGameTime;
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
@@ -104,6 +112,9 @@ const resetGuesses = function resetGuesses() {
 // Add event listener to grid
 grid.addEventListener('click', function clickCard (event) {
   let clicked = event.target; // The event target is our clicked item
+  
+  timer.innerHTML = '0 mins 0 secs';
+  clearInterval(interval);
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
   if (
@@ -114,6 +125,7 @@ grid.addEventListener('click', function clickCard (event) {
   }
 
   if (count < 2) {
+    moveCounter();
     count++;
     if (count === 1) {
       // Assign first guess
@@ -148,18 +160,30 @@ grid.addEventListener('click', function clickCard (event) {
   }
 });
 
-// Set timer and call the function every second
-// const startingMinutes = 1;
-// let time = startingMinutes * 60;
-// const countdownEl = document.getElementById('time');
-// let interval = setInterval(updateCountdown, 1000);
+function moveCounter() {
+  moves++;
+  flips.innerHTML = `${moves} move(s)`;
+  
+  if (moves == 1) {
+    second = 0;
+    minute = 0;
+    hour = 0;
+    startTimer();
+  }
+}
 
-// function updateCountdown() {
-//   const minutes = Math.floor(time / 60);
-//   let seconds = time % 60;
-
-//   seconds = seconds < 10 ? '0' + seconds : seconds;
-
-//   countdownEl.innerHTML = `${minutes}: ${seconds}`;
-//   time !== 0 ? time-- : time;
-// }
+function startTimer() {
+  interval = setInterval(function(){
+    timer.innerHTML = `${minute} : ${second}`;
+    second++;
+    
+    if(second == 60) {
+      minute++;
+      second = 0;
+    }
+    if(minute == 60) {
+      hour++;
+      minute = 0;
+    }
+  }, 1000);
+}
