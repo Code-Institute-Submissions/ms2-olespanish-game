@@ -123,7 +123,7 @@ I took inspiration from [Diogo Realles' CodePen](https://codepen.io/SoftwaRealle
 The neon effect buttons were created following [Coding Tuting](https://www.codingtuting.com/2019/09/neon-buttons-pure-css.html) and style to suit the project's needs.
 
 The sound effects were implemented with help from [Button Sound Effects Tutorial](https://www.youtube.com/watch?v=VlwSz2dXK_8&ab_channel=AdamKhoury).
-I created the timer function with help from [Simple Countdown Timer with JavaScript](https://www.youtube.com/watch?v=x7WJEmxNlEs&ab_channel=CodewithAniaKub%C3%B3w).
+
 
 ### 6.2. Media
 

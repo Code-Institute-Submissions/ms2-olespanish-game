@@ -42,20 +42,21 @@ const cardsArray = [
   }
 ];
 
-// Duplicate array to create a match for each card
 let gameGrid = cardsArray.concat(cardsArray);
-// Randomize game grid on each load
 gameGrid.sort(() => 0.5 - Math.random());
 
 // Global variables
 let firstGuess = '';
 let secondGuess = '';
+let cardsChosen = [];
+let cardsWon = [];
 let count = 0;
 let previousTarget = null;
 let delay = 1000;
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
+const resultDisplay = document.getElementById('result');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
@@ -101,7 +102,7 @@ const resetGuesses = function resetGuesses() {
 }
 
 // Add event listener to grid
-grid.addEventListener('click', function (event) {
+grid.addEventListener('click', function clickCard (event) {
   let clicked = event.target; // The event target is our clicked item
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
@@ -132,12 +133,18 @@ grid.addEventListener('click', function (event) {
       if (firstGuess === secondGuess) {
         setTimeout(match, delay);
         setTimeout(resetGuesses, delay);
+        cardsWon.push(cardsChosen);
       } else {
         setTimeout(resetGuesses, delay);
       }
     }
     // Set previous target to clicked
     previousTarget = clicked;
+
+    resultDisplay.textContent = cardsWon.length;
+    if (cardsWon.lenght === cardsArray.length) {
+      resultDisplay.textContent = 'Congratulations!';
+    }
   }
 });
 
