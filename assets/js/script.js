@@ -70,6 +70,7 @@ game.appendChild(grid);
 
 // For each item in the cardsArray array
 gameGrid.forEach(function (item) {
+
   const card = document.createElement('div');
   card.classList.add('card');
   card.dataset.name = item.name; 
@@ -94,6 +95,7 @@ const match = function match() {
   var selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
     card.classList.add('match');
+    card.style.pointerEvents = 'none';
   });
 }
 
@@ -110,9 +112,10 @@ const resetGuesses = function resetGuesses() {
 }
 
 // Add event listener to grid
+
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
-  
+
   timer.innerHTML = '0 mins 0 secs';
   clearInterval(interval);
 
@@ -146,7 +149,6 @@ grid.addEventListener('click', function clickCard(event) {
         setTimeout(match, delay);
         setTimeout(resetGuesses, delay);
         cardsWon.push(cardsChosen);
-        clicked.removeEventListener('click', clickCard);
       } else {
         setTimeout(resetGuesses, delay);
       }
