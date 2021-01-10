@@ -12,7 +12,7 @@ You can visit the deployed website [here](https://fernandagil.github.io/ms2-oles
 
 #### 1.1. Project Goals
 
-This game was designed for students of all ages learning the Spanish language. There are 3 levels that increase in difficulty:
+This game was designed for students of all ages learning the Spanish language (or just curious!). There are 3 levels that increase in difficulty:
 - Beginners
 
 In this level, every card provides 3 different pieces of information: a picture, a name and a pronunciation clip. 
@@ -32,11 +32,21 @@ This project’s main goals are:
 - to strengthen memory
 - to have fun!
 
-
-
 #### 1.2. User Stories
 
-- As 
+###### Entertainment Goals
+- As a user, I’d like to have fun while playing an easy game.
+- As a user, I’d like a game that has simple but nice visuals, with easy recognisable pictures.
+- As a user playing for the first time, I'd the game structure to be obvious so I can start playing right away.
+- As a user that doesn’t know how the game works, I'd like to be able to find the instructions easily.
+- As a competitive user, I’d like to know in how much time I completed the game.
+
+###### Didactic Goals
+- As a teacher, I’d like a game where my students can learn while having fun.
+- As a teacher, I'd like a challenging game that my students will want to play at home for fun and learn new words in the process.
+- As a student, I’d like to test the new vocabulary I learn in Spanish class while having fun in the process.
+- As a student, I’d like to hear the pronunciation of the words I’m learning.
+
 
 #### 1.3. Wireframes
 The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
@@ -55,7 +65,7 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 ### 2.1. Existing features
 
 
-### 2.2. Features left to implement in the future
+### 2.2. Features to implement in the future
 
 - 
 

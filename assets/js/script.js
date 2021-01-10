@@ -110,7 +110,7 @@ const resetGuesses = function resetGuesses() {
 }
 
 // Add event listener to grid
-grid.addEventListener('click', function clickCard (event) {
+grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
   
   timer.innerHTML = '0 mins 0 secs';
@@ -146,6 +146,7 @@ grid.addEventListener('click', function clickCard (event) {
         setTimeout(match, delay);
         setTimeout(resetGuesses, delay);
         cardsWon.push(cardsChosen);
+        clicked.removeEventListener('click', clickCard);
       } else {
         setTimeout(resetGuesses, delay);
       }
