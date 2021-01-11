@@ -22,14 +22,11 @@
         <div class="col-lg-2 game-menu-area shadow mt-lg-0 align-self-center">
           <div class="container">
             <div class="row">
-              <div class="col-4 col-lg-12 game-info">
-                <h4>Time: <span id="time">0 mins 0 secs</span></h4>
+              <div class="col-6 col-lg-12 game-info">
+                <h4>Time: <span id="time-counter">0 mins 0 secs</span></h4>
               </div>
-              <div class="col-4 col-lg-12 game-info">
-                <h4>Flips: <span id="flips"></span></h4>
-              </div>
-              <div class="col-4 col-lg-12 game-info">
-                <h4>Score: <span id="result"></span></h4>
+              <div class="col-6 col-lg-12 game-info">
+                <h4>Moves: <span id="moves-counter"></span></h4>
               </div>
             </div>
           </div>
@@ -42,9 +39,34 @@
       </div>
     </article>
 
+    <div class="modal" id="gameOverModal">
+      <div class="modal-content">
+        <span aria-label="close" role="button" class="close" id="closeModal">&times;</span>
+        <div class="modal-header">
+          <h2>Fin del juego</h2>
+        </div>
+        <div class="modal-body">
+          <div class="message">
+            <p>¡Felicidades! Ya estás más cerca de entender la letra de La Macarena</p>
+            <p>Has completado el juego en solo <br>
+              <span class="total-game-moves"></span> movimientos y <span class="total-game-time"></span>
+            </p>
+            <p>Congratulations! You're closer now to understand La Macarena</p>
+            <p>You completed the game in just <br>
+              <span class="total-game-moves"></span> moves and <span class="total-game-time"></span>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="brown-button" onClick="playAgain()">Play Again</button>
+        </div>
+      </div>
+    </div>
+
     <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

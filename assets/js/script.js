@@ -2,43 +2,53 @@
 const cardsArray = [
   {
     name: 'coco',
-    img: 'assets/images/text-and-img-coco.png'
+    img: 'assets/images/text-and-img-coco.png',
+    audio: 'assets/audio/coco.mp3'
   },
   {
     name: 'fresa',
-    img: 'assets/images/text-and-img-fresa.jpg'
+    img: 'assets/images/text-and-img-fresa.jpg',
+    audio: 'assets/audio/fresa.mp3'
   },
   {
     name: 'kiwi',
-    img: 'assets/images/text-and-img-kiwi.png'
+    img: 'assets/images/text-and-img-kiwi.png',
+    audio: 'assets/audio/kiwi.mp3'
   },
   {
     name: 'limon',
-    img: 'assets/images/text-and-img-limon.jpg'
+    img: 'assets/images/text-and-img-limon.jpg',
+    audio: 'assets/audio/limon.mp3'
   },
   {
     name: 'manzana',
-    img: 'assets/images/text-and-img-manzana.jpg'
+    img: 'assets/images/text-and-img-manzana.jpg',
+    audio: 'assets/audio/manzana.mp3'
   },
   {
     name: 'melocoton',
-    img: 'assets/images/text-and-img-melocoton.png'
+    img: 'assets/images/text-and-img-melocoton.png',
+    audio: 'assets/audio/melocoton.mp3'
   },
   {
     name: 'naranja',
-    img: 'assets/images/text-and-img-naranja.jpg'
+    img: 'assets/images/text-and-img-naranja.jpg',
+    audio: 'assets/audio/naranja.mp3'
   },
   {
     name: 'pera',
-    img: 'assets/images/text-and-img-pera.png'
+    img: 'assets/images/text-and-img-pera.png',
+    audio: 'assets/audio/pera.mp3'
   },
   {
     name: 'platano',
-    img: 'assets/images/text-and-img-platano.jpg'
+    img: 'assets/images/text-and-img-platano.jpg',
+    audio: 'assets/audio/platano.mp3'
   },
   {
     name: 'sandia',
-    img: 'assets/images/text-and-img-sandia.jpg'
+    img: 'assets/images/text-and-img-sandia.jpg',
+    audio: 'assets/audio/sandia.mp3'
   }
 ];
 
@@ -53,42 +63,58 @@ let cardsWon = [];
 let count = 0;
 let previousTarget = null;
 let delay = 1000;
-let flips = document.getElementById('flips');
+let movesCounter = document.getElementById('moves-counter');
 let moves;
-let timer = document.getElementById('time');
 let second = 0;
 let minute = 0;
 let hour = 0;
 let interval;
 let totalGameTime;
+let totalGameMovesElement = document.getElementsByClassName('total-game-moves');
+let totalGameTimeElement = document.getElementsByClassName('total-game-time');
+let timeCounter = document.getElementById('time-counter');
+let modalElement = document.getElementById('gameOverModal');
+let closeModalIcon = document.getElementById('closeModal');
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
-const resultDisplay = document.getElementById('result');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
+function startGame() {
+
 // For each item in the cardsArray array
-gameGrid.forEach(function (item) {
+  gameGrid.forEach(function (item) {
+    const { name, img, audio } = item;
 
-  const card = document.createElement('div');
-  card.classList.add('card');
-  card.dataset.name = item.name; 
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.dataset.name = name; 
+    card.dataset.audio = audio; 
 
-  // Create back of card
-  const back = document.createElement('div');
-  back.classList.add('back');
+    // Create back of card
+    const back = document.createElement('div');
+    back.classList.add('back');
 
-  // Create front of card
-  const front = document.createElement('div');
-  front.classList.add('front');
-  front.style.backgroundImage = `url(${item.img})`;
+    // Create front of card
+    const front = document.createElement('div');
+    front.classList.add('front');
+    front.style.backgroundImage = `url(${item.img})`;
 
-  // Append card to grid, and front and back to each card
-  grid.appendChild(card);
-  card.appendChild(back);
-  card.appendChild(front);
-});
+    // Append card to grid, and front and back to each card
+    grid.appendChild(card);
+    card.appendChild(back);
+    card.appendChild(front);
+  });
+
+  // Reset moves
+  moves = 0;
+  movesCounter.innerText = `${moves} move(s)`;
+
+  // Reset time
+  timeCounter.innerHTML = '0 mins 0 secs';
+  clearInterval(interval);
+}
 
 // Add match CSS
 const match = function match() {
@@ -116,7 +142,7 @@ const resetGuesses = function resetGuesses() {
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
 
-  timer.innerHTML = '0 mins 0 secs';
+  timeCounter.innerHTML = '0 mins 0 secs';
   clearInterval(interval);
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
@@ -156,16 +182,15 @@ grid.addEventListener('click', function clickCard(event) {
     // Set previous target to clicked
     previousTarget = clicked;
 
-    resultDisplay.textContent = cardsWon.length;
-    if (cardsWon.lenght === cardsArray.length) {
-      resultDisplay.textContent = 'Congratulations!';
+    if (cardsWon.length === 10) {
+      endGame();
     }
   }
 });
 
 function moveCounter() {
   moves++;
-  flips.innerHTML = `${moves} move(s)`;
+  movesCounter.innerHTML = `${moves} move(s)`;
   
   if (moves == 1) {
     second = 0;
@@ -176,8 +201,8 @@ function moveCounter() {
 }
 
 function startTimer() {
-  interval = setInterval(function(){
-    timer.innerHTML = `${minute} : ${second}`;
+  interval = setInterval(function() {
+    timeCounter.innerHTML = `${minute} mins ${second} secs`;
     second++;
     
     if(second == 60) {
@@ -190,3 +215,38 @@ function startTimer() {
     }
   }, 1000);
 }
+
+function endGame() {
+  clearInterval(interval);
+  totalGameTime = timeCounter.innerHTML;
+
+  //show modal on game end
+  modalElement.classList.add("show-modal");
+    
+  // Show totalGameTime, moves and finalStarRating in Modal
+  totalGameTimeElement.innerHTML = totalGameTime;
+  totalGameMovesElement.innerHTML = moves;
+
+  cardsWon = [];
+  closeModal();
+}
+
+function closeModal() {
+  closeModalIcon.addEventListener("click", function() {
+    modalElement.classList.remove("show-modal");
+    startGame();
+  });
+}
+
+function playAgain() {
+  modalElement.classList.remove("show-modal");
+  startGame();
+}
+
+// window.onload = function () {
+//   setTimeout(function() {
+//     startGame();
+//   }, 1000);
+// }
+
+startGame();
