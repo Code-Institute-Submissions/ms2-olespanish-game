@@ -65,11 +65,11 @@ let previousTarget = null;
 let delay = 1000;
 let movesCounter = document.getElementById('moves-counter');
 let moves;
-let second = 0;
-let minute = 0;
-let hour = 0;
-let interval;
-let totalGameTime;
+let second = 0,
+    minute = 0,
+    hour = 0,
+    interval,
+    totalGameTime;
 let totalGameMovesElement = document.getElementsByClassName('total-game-moves');
 let totalGameTimeElement = document.getElementsByClassName('total-game-time');
 let timeCounter = document.getElementById('time-counter');
@@ -82,7 +82,6 @@ grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
 function startGame() {
-
 // For each item in the cardsArray array
   gameGrid.forEach(function (item) {
     const { name, img, audio } = item;
@@ -90,7 +89,6 @@ function startGame() {
     const card = document.createElement('div');
     card.classList.add('card');
     card.dataset.name = name; 
-    card.dataset.audio = audio; 
 
     // Create back of card
     const back = document.createElement('div');
@@ -100,6 +98,7 @@ function startGame() {
     const front = document.createElement('div');
     front.classList.add('front');
     front.style.backgroundImage = `url(${item.img})`;
+    // front.setAttribute("src", "${item.audio}");
 
     // Append card to grid, and front and back to each card
     grid.appendChild(card);
@@ -141,9 +140,6 @@ const resetGuesses = function resetGuesses() {
 
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
-
-  timeCounter.innerHTML = '0 mins 0 secs';
-  clearInterval(interval);
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
   if (
@@ -240,6 +236,7 @@ function closeModal() {
 
 function playAgain() {
   modalElement.classList.remove("show-modal");
+
   startGame();
 }
 

@@ -19,20 +19,24 @@
       
     <article class="game-container">
       <div class="row">
-        <div class="col-lg-2 game-menu-area shadow mt-lg-0 align-self-center">
+        <div class="col-lg-2 mx-auto no-gutters game-menu-area shadow mt-lg-0 align-self-center">
           <div class="container">
             <div class="row">
               <div class="col-6 col-lg-12 game-info">
-                <h4>Time: <span id="time-counter">0 mins 0 secs</span></h4>
+                <h4>Time: <br>
+                  <span id="time-counter">0 mins 0 secs</span>
+                </h4>
               </div>
               <div class="col-6 col-lg-12 game-info">
-                <h4>Moves: <span id="moves-counter"></span></h4>
+                <h4>Moves: <br>
+                  <span id="moves-counter"></span>
+                </h4>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-9 game-grid-area shadow">
+        <div class="col-lg-10 mx-auto no-gutters game-grid-area shadow">
           <div id="game" class="container">
           </div>
         </div>
@@ -47,17 +51,17 @@
         </div>
         <div class="modal-body">
           <div class="message">
-            <p>¡Felicidades! Ya estás más cerca de entender la letra de La Macarena :D <br>Has completado el juego en solo <br>
+            <p>¡Felicidades! Parece que el español no se te da mal :D <br>Has completado el juego en solo <br>
               <span class="total-game-moves"></span> movimientos y <span class="total-game-time"></span>
             </p>
             <span> · · · · · </span>
-            <p>Congratulations! You're closer now to understand La Macarena :D <br>You completed the game in just <br>
+            <p>Congratulations! It seems you're quite good at Spanish :D <br>You completed the game in just <br>
               <span class="total-game-moves"></span> moves and <span class="total-game-time"></span>
             </p>
           </div>
         </div>
         <div class="modal-footer">
-          <button class="brown-button shadow" onclick="playAgain()">Play Again</button>
+          <button class="neon-btn" onclick="playAgain()">Play Again</button>
         </div>
       </div>
     </div>
