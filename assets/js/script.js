@@ -70,11 +70,11 @@ let second = 0,
     hour = 0,
     interval,
     totalGameTime;
-let totalGameMovesElement = document.getElementsByClassName('total-game-moves');
-let totalGameTimeElement = document.getElementsByClassName('total-game-time');
+let totalGameMovesEl = document.getElementById('total-game-moves');
+let totalGameTimeEl = document.getElementById('total-game-time');
 let timeCounter = document.getElementById('time-counter');
-let modalElement = document.getElementById('gameOverModal');
-let closeModalIcon = document.getElementById('closeModal');
+let modalEl = document.getElementById('game-over-modal');
+let closeModalIcon = document.getElementById('close-modal');
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
@@ -89,6 +89,7 @@ function startGame() {
     const card = document.createElement('div');
     card.classList.add('card');
     card.dataset.name = name; 
+    card.dataset.audio = audio; 
 
     // Create back of card
     const back = document.createElement('div');
@@ -98,7 +99,7 @@ function startGame() {
     const front = document.createElement('div');
     front.classList.add('front');
     front.style.backgroundImage = `url(${item.img})`;
-    // front.setAttribute("src", "${item.audio}");
+    
 
     // Append card to grid, and front and back to each card
     grid.appendChild(card);
@@ -111,7 +112,7 @@ function startGame() {
   movesCounter.innerText = `${moves} move(s)`;
 
   // Reset time
-  timeCounter.innerHTML = '0 mins 0 secs';
+  timeCounter.innerHTML = '0 : 0';
   clearInterval(interval);
 }
 
@@ -198,10 +199,10 @@ function moveCounter() {
 
 function startTimer() {
   interval = setInterval(function() {
-    timeCounter.innerHTML = `${minute} mins ${second} secs`;
+    timeCounter.innerHTML = `${minute} : ${second}`;
     second++;
-    
-    if(second == 60) {
+
+    if (second == 60) {
       minute++;
       second = 0;
     }
@@ -213,29 +214,28 @@ function startTimer() {
 }
 
 function endGame() {
-  clearInterval(interval);
-  totalGameTime = timeCounter.innerHTML;
+  // Show modal on game end
+  setTimeout(function() {
+    modalEl.classList.add("show-modal"); 
 
-  //show modal on game end
-  modalElement.classList.add("show-modal");
-    
-  // Show totalGameTime, moves and finalStarRating in Modal
-  totalGameTimeElement.innerHTML = totalGameTime;
-  totalGameMovesElement.innerHTML = moves;
-
+    // Show totalGameTime and moves
+    totalGameMovesEl.innerHTML = moves;
+    totalGameTimeEl.innerHTML = totalGameTime;
+  }, 1500);
+ 
   cardsWon = [];
   closeModal();
 }
 
 function closeModal() {
   closeModalIcon.addEventListener("click", function() {
-    modalElement.classList.remove("show-modal");
+    modalEl.classList.remove("show-modal");
     startGame();
   });
 }
 
 function playAgain() {
-  modalElement.classList.remove("show-modal");
+  modalEl.classList.remove("show-modal");
 
   startGame();
 }

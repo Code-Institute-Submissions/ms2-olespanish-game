@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Nixie+One&display=swap');
 
 /* ---------- GENERAL ELEMENTS ---------- */
@@ -5,13 +12,22 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
   color: #5B5B5B;
   font-family: 'Nixie One', sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FBD2D0), to(#CAE6D7));
+  background-image: -o-linear-gradient(top, #FBD2D0, #CAE6D7);
   background-image: linear-gradient(to bottom, #FBD2D0, #CAE6D7);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,10 +40,16 @@ article {
 
 .container {
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
 }
 
 a {
@@ -36,8 +58,8 @@ a {
 }
 
 img {
-    width: 160px;
-    height: auto;
+  width: 160px;
+  height: auto;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -65,6 +87,7 @@ button {
   background-color: #FCFCFC66;
   border: 2px solid #F7ACA8;
   -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -72,7 +95,18 @@ button {
   -webkit-box-shadow: inset 0px 0px 8px 3px #F7ACA8;
   box-shadow: 0px 0px 10px 3px #F7ACA8, inset 0px 0px 10px 3px #F7ACA8;
   border-color: #fff;
+  color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F7ACA8, 0 0 40px #F7ACA8, 0 0 50px #F7ACA8, 0 0 60px #F7ACA8, 0 0 70px #F7ACA8;
+}
+
+.sm-btn {
+  font-size: 14px;
+  min-width: 120px;
+  max-width: 200px;
+  height: 60px;
+  margin: 30px auto;
+  padding: 5px;
+  font-family: 'Fascinate Inline', cursive;
 }
 
 /* ---------- INDEX.HTML ---------- */
@@ -85,8 +119,11 @@ button {
 }
 
 .main-title {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F7ACA8), to(#95CDAF));
+  background: -o-linear-gradient(top, #F7ACA8, #95CDAF);
   background: linear-gradient(to bottom, #F7ACA8, #95CDAF);
   -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 90px;
   font-family: 'Fascinate Inline', cursive;
@@ -110,7 +147,8 @@ button {
 
 .shadow {
   border-radius: 16px;
-  box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
+    box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
 }
 
 /* ---------- INSTRUCTIONS.HTML ---------- */
@@ -121,7 +159,7 @@ button {
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 70px;
+  height: 80px;
   background: #FCFCFC;
   text-align: center;
   padding: 10px;
@@ -129,8 +167,11 @@ button {
 }
 
 .title {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F7ACA8), to(#95CDAF));
+  background: -o-linear-gradient(top, #F7ACA8, #95CDAF);
   background: linear-gradient(to bottom, #F7ACA8, #95CDAF);
   -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Fascinate Inline', cursive;
 }
@@ -139,7 +180,8 @@ button {
   background-image: url("../images/ole-bg.png");
   border: 5px solid #FCFCFC;
   margin-bottom: 20px;
-  max-height: 60px;
+  max-height: 80px;
+  padding: 40px;
 }
 
 .heading {
@@ -165,23 +207,24 @@ button {
 /* ---------- VOCABULARY.HTML ---------- */
 
 .vocab-element {
-  padding: 15px;
+  padding: 10px 0;
 }
 
 .vocab-img {
-  width: 80%;
+  width: 70%;
   border-radius: 50%;
-  box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
+    box-shadow: 0px 0px 12px 2px rgba(91,91,91,0.40);
 }
 
 .vocab-name {
-  margin: 7px 0;
+  margin: 5px 0;
   font-size: 1.1rem;
 }
 
 .vocab-sound {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: none;
   margin-bottom: 5px;
 }
@@ -193,12 +236,14 @@ button {
 /* ---------- GAME.HTML ---------- */
 
 .game-container {
-  align-content: center;
+  -ms-flex-line-pack: center;
+    align-content: center;
 }
 
 .game-menu-area {
   margin: auto 10px 5px;
-  font-size: 0.9rem;
+  padding: 0px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -214,6 +259,17 @@ button {
 
 .game-info {
   padding: 20px auto;
+  text-align: center;
+  vertical-align: center;
+}
+
+.game-info a {
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 40%;
+  margin-top: 20px;
+  border: none;
+  background: none;
 }
 
 #time-counter, #moves-counter {
@@ -222,9 +278,14 @@ button {
 
 .grid {
   background: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
   border-radius: 15px;
   padding: 20px;
 }
@@ -237,18 +298,23 @@ button {
   background-position: center center;
   border: hidden;
   position: relative;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .back {
   background: url("../images/back-card.png") no-repeat center center /
     contain;
-  box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
+    box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
 }
 
 .front {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
   background-color: #FCFCFC;
   background-size: contain;
   background-repeat: no-repeat;
@@ -263,13 +329,15 @@ button {
 
 .back, .front {
   position: absolute;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .selected {
   -webkit-box-shadow: inset 0px 0px 8px 3px #F7ACA8;
   box-shadow: 0px 0px 10px 3px #F7ACA8, inset 0px 0px 10px 3px #F7ACA8;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .match {
@@ -279,7 +347,8 @@ button {
 
 .match .back {
   background: #FCFCFC !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 /* ---------- GAME OVER MODAL ---------- */ 
@@ -301,13 +370,17 @@ button {
   margin: auto;
   padding: 0;
   position: relative;
-  justify-content: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
   top: 10%;
   background-color: #FCFCFC;
   border: 3px dotted #F7ACA8;
   border-radius: 15px;
-  box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
-  animation: animateTop 0.4s; 
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
+    box-shadow: 0px 0px 6px 1px rgba(91,91,91,0.40);
+  -webkit-animation: animateTop 0.4s;
+    animation: animateTop 0.4s; 
 }
 
 .modal-header {
@@ -316,9 +389,14 @@ button {
 }
 
 .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
   padding: 10px;
 }
 
@@ -333,7 +411,7 @@ button {
   margin-right: 20px;
   font-weight: bold;
   position: relative;
-  /* animation: animateCloseIcon 5s linear 2s infinite; */
+  animation: animateCloseIcon 5s linear 2s infinite;
 }
 
 .show-modal {
@@ -403,7 +481,7 @@ button {
     margin-top: 12rem;
   }
   .card, .back, .front {
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
   }
 }
