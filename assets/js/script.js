@@ -56,9 +56,7 @@ let gameGrid = cardsArray.concat(cardsArray);
 console.log(gameGrid);
 gameGrid.sort(() => 0.5 - Math.random());
 
-let sounds = document.querySelector("#sounds");
 
-// Global variables
 let firstGuess = '';
 let secondGuess = '';
 let cardsChosen = [];
@@ -79,6 +77,7 @@ let totalGameTimeEl = document.getElementById('total-game-time');
 let timeCounter = document.getElementById('time-counter');
 let modalEl = document.getElementById('game-over-modal');
 let closeModalIcon = document.getElementById('close-modal');
+let sounds = document.querySelector("#sounds");
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
@@ -145,8 +144,7 @@ const resetGuesses = function resetGuesses() {
 // Add event listener to grid
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
-  sounds.setAttribute("src", event.target.parentNode.getAttribute('data-audio'))
-  sounds.play();
+  
   console.log(event.target.parentNode.getAttribute('data-audio'));
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
@@ -160,6 +158,11 @@ grid.addEventListener('click', function clickCard(event) {
   if (count < 2) {
     moveCounter();
     count++;
+
+    // Plays word's pronunciation every time a card is clicked 
+    sounds.setAttribute("src", event.target.parentNode.getAttribute('data-audio'));
+    sounds.play();
+
     if (count === 1) {
       // Assign first guess
       firstGuess = clicked.parentNode.dataset.name;

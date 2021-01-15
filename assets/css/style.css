@@ -68,16 +68,17 @@ img {
 
 /* ---------- BUTTONS ---------- */
 
-.menu-btn {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+button {
+  /* font-size: 20px; */
+  font-weight: bold;
+  /* width: 230px;
+  height: 80px; */
+  border-radius: 15px;
+  background-color: #FCFCFC;
+  margin: 5px auto;
 }
 
-button {
+.btn {
   font-size: 20px;
   font-weight: bold;
   width: 230px;
@@ -85,6 +86,15 @@ button {
   border-radius: 15px;
   background-color: #FCFCFC;
   margin: 5px auto;
+}
+
+.menu-btn {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .neon-btn {
@@ -105,15 +115,16 @@ button {
 
 .shortcut-btns {
   margin: 30px auto;
+  max-width: 500px;
 }
 
 .sm-btn {
-  font-size: 14px;
+  font-size: 16px;
   min-width: 80px;
   max-width: 200px;
   height: 60px;
-  padding: 5px;
   font-family: 'Fascinate Inline', cursive;
+  background-color: #f7aca829;
 }
 
 /* ---------- INDEX.HTML ---------- */
