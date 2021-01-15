@@ -53,6 +53,7 @@ const cardsArray = [
 ];
 
 let gameGrid = cardsArray.concat(cardsArray);
+console.log(gameGrid);
 gameGrid.sort(() => 0.5 - Math.random());
 
 // Global variables
@@ -65,6 +66,7 @@ let previousTarget = null;
 let delay = 1000;
 let movesCounter = document.getElementById('moves-counter');
 let moves;
+let timeStart = "";
 let second = 0,
     minute = 0,
     hour = 0,
@@ -78,11 +80,13 @@ let closeModalIcon = document.getElementById('close-modal');
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
-grid.setAttribute('class', 'grid');
-game.appendChild(grid);
 
 function startGame() {
-// For each item in the cardsArray array
+  grid.setAttribute('class', 'grid');
+  game.appendChild(grid);
+  grid.innerHTML = ""; // Remove all images from previous games 
+
+  // For each item in the cardsArray array
   gameGrid.forEach(function (item) {
     const { name, img, audio } = item;
 
@@ -90,6 +94,7 @@ function startGame() {
     card.classList.add('card');
     card.dataset.name = name; 
     card.dataset.audio = audio; 
+
 
     // Create back of card
     const back = document.createElement('div');
@@ -100,6 +105,28 @@ function startGame() {
     front.classList.add('front');
     front.style.backgroundImage = `url(${item.img})`;
     
+    // front.createElement = `onclick="${item.audio}.play()"`;
+    // // front.setAttribute('onclick', '${item.audio}.play()');
+    
+    
+    // console.log(item.audio);
+    //   const wordAudio = item.audio;
+    //   front.setAttribute("onclick", "wordAudio.play()");
+
+    // front.setAttribute("onclick", "${item.audio}).play()");
+    // front.createElement = `onclick="${item.audio}.play()"`;
+
+
+
+    // front.dataset.audio = audio; 
+    // const wordAudio = item.audio;
+    // front.addEventListener('click', function () {
+    //   wordAudio.play();
+    // });
+    // card.createElement = `<audio onclick="${item.audio}.play()""></audio>`;
+    
+    // front.setAttribute("src", "${item.audio}");
+    
 
     // Append card to grid, and front and back to each card
     grid.appendChild(card);
@@ -109,10 +136,10 @@ function startGame() {
 
   // Reset moves
   moves = 0;
-  movesCounter.innerText = `${moves} move(s)`;
+  movesCounter.innerText = `${moves}moves`;
 
   // Reset time
-  timeCounter.innerHTML = '0 : 0';
+  timeCounter.innerHTML = '00:00';
   clearInterval(interval);
 }
 
@@ -138,9 +165,11 @@ const resetGuesses = function resetGuesses() {
 }
 
 // Add event listener to grid
-
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
+//   event.target.parentNode.getAttribute('data-audio');
+  
+  console.log(event.target.parentNode.getAttribute('data-audio'));
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid
   if (
@@ -158,6 +187,7 @@ grid.addEventListener('click', function clickCard(event) {
       firstGuess = clicked.parentNode.dataset.name;
       console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
+    //   clicked.parentNode.dataset.audio;
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name;
@@ -198,22 +228,33 @@ function moveCounter() {
 }
 
 function startTimer() {
-  interval = setInterval(function() {
-    timeCounter.innerHTML = `${minute} : ${second}`;
-    second++;
+  let timer = 0;
+    if (timeStart === "") {
+      timeStart = setInterval(() => { 
+        ++timer;
+        second = timer % 60;
+        minute = Math.floor(timer / 60);
+        if (minute < 10) minute = '0' + minute;
+        if (second < 10) second = '0' + second;
+        interval = minute + ':' + second;
+        if (interval != null) {
+          document.querySelector("#time-counter").innerHTML = interval;
+        }
+      }, 1000);
+    }
+}
 
-    if (second == 60) {
-      minute++;
-      second = 0;
-    }
-    if(minute == 60) {
-      hour++;
-      minute = 0;
-    }
-  }, 1000);
+function stopTimer() {
+  clearInterval(timeStart);
+  timeStart = '';
 }
 
 function endGame() {
+  stopTimer();
+
+  clearInterval(interval);
+  totalGameTime = timeCounter.innerHTML;
+
   // Show modal on game end
   setTimeout(function() {
     modalEl.classList.add("show-modal"); 
@@ -221,7 +262,7 @@ function endGame() {
     // Show totalGameTime and moves
     totalGameMovesEl.innerHTML = moves;
     totalGameTimeEl.innerHTML = totalGameTime;
-  }, 1500);
+  }, 2000);
  
   cardsWon = [];
   closeModal();
