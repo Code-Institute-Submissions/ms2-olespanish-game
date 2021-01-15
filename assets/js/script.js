@@ -56,6 +56,8 @@ let gameGrid = cardsArray.concat(cardsArray);
 console.log(gameGrid);
 gameGrid.sort(() => 0.5 - Math.random());
 
+let sounds = document.querySelector("#sounds");
+
 // Global variables
 let firstGuess = '';
 let secondGuess = '';
@@ -95,7 +97,6 @@ function startGame() {
     card.dataset.name = name; 
     card.dataset.audio = audio; 
 
-
     // Create back of card
     const back = document.createElement('div');
     back.classList.add('back');
@@ -104,29 +105,6 @@ function startGame() {
     const front = document.createElement('div');
     front.classList.add('front');
     front.style.backgroundImage = `url(${item.img})`;
-    
-    // front.createElement = `onclick="${item.audio}.play()"`;
-    // // front.setAttribute('onclick', '${item.audio}.play()');
-    
-    
-    // console.log(item.audio);
-    //   const wordAudio = item.audio;
-    //   front.setAttribute("onclick", "wordAudio.play()");
-
-    // front.setAttribute("onclick", "${item.audio}).play()");
-    // front.createElement = `onclick="${item.audio}.play()"`;
-
-
-
-    // front.dataset.audio = audio; 
-    // const wordAudio = item.audio;
-    // front.addEventListener('click', function () {
-    //   wordAudio.play();
-    // });
-    // card.createElement = `<audio onclick="${item.audio}.play()""></audio>`;
-    
-    // front.setAttribute("src", "${item.audio}");
-    
 
     // Append card to grid, and front and back to each card
     grid.appendChild(card);
@@ -167,8 +145,8 @@ const resetGuesses = function resetGuesses() {
 // Add event listener to grid
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
-//   event.target.parentNode.getAttribute('data-audio');
-  
+  sounds.setAttribute("src", event.target.parentNode.getAttribute('data-audio'))
+  sounds.play();
   console.log(event.target.parentNode.getAttribute('data-audio'));
 
   // Do not allow the grid section itself to be selected; only select divs inside the grid

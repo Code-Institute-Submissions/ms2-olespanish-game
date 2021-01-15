@@ -34,6 +34,10 @@ body {
   font-weight: bold;
 }
 
+#sounds {
+    display: none;
+}
+
 article {
   width: 95%;
 }

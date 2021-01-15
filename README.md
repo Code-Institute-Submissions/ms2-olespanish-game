@@ -1,6 +1,6 @@
 # ¡Olé Spanish!
 
-![¡Olé Spanish!](readme-files//)
+![¡Olé Spanish!](readme-files/ms2-amiresponsive.png)
 
 
 ¡Olé Spanish! memory game is a great way to practice Spanish vocabulary while having fun. This memory game will test both your vocabulary and your memory.
@@ -39,8 +39,16 @@ This project’s main goals are:
 - As a student, I’d like to test the new vocabulary I learn in Spanish class while having fun in the process.
 - As a student, I’d like to hear the pronunciation of the words I’m learning.
 
+#### 1.3. Design Choices
 
-#### 1.3. Wireframes
+- **Fonts**: As my project has a strong didactical factor, I decided to go with Nixie One for most of the text in the project because it’s a neat and easy to read font that I associate with old typewriters. To create the logo and to emphasize other pieces of text I used Fascinate Inline.
+- **Cards**: I chose the fruits as a topic for my cards because it’s one of the first things you learn when studying a new language. I thought this would make the game easier for people with basic or no Spanish knowledge. After choosing a background image to keep some consistency, I used [Canva](https://www.texttomp3.online/) to edit this background image with the vectors obtained from [Pixabay](https://pixabay.com/) to represent every word in the vocabulary.
+- **Audio files**: To generate every word’s pronunciation I used [Text 2 MP3](https://www.texttomp3.online/).
+- **Colours**: To keep consistency through the project, I first selected an [image](https://pixabay.com/es/illustrations/papel-digital-de-fondo-patr%C3%B3n-5049042/) to be the back of the cards, and from that image I created the colour palette.
+
+![colour palette](readme-files/ms2-palette.png)
+
+#### 1.4. Wireframes
 The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
 
 |    Desktop   |    Tablet    |    Mobile    |
@@ -106,6 +114,7 @@ An idea to implement in the future would be adding a new level of difficulty. Th
 - [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images and icon before making it a Favicon.
 - [HTML Color Codes](https://html-color-codes.info/): to select colours codes from an image to create the website's colour palette.
 - [Text 2 MP3](https://www.texttomp3.online/): to generate the vocabulary words' pronunciation.
+- [Coolors.co](https://coolors.co/): to generate color palette for the project.
 - [Autoprefixer](https://autoprefixer.github.io/) - used to parsethe CSS and to add vendor prefixes to CSS rules.
 
 ---
