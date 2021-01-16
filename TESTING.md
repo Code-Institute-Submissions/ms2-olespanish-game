@@ -5,26 +5,19 @@
 [HTML Validator](https://validator.w3.org/) : 
 
 - Home Page
-
 ![Home Page HTML Validator](readme-files/val-home1.png)
-The first test returned an error repeated 3 times. This was solved by removing the <button> element and adding a <div> instead. I also created .btn class to keep the styling that I had for the <button> element.
-
-![Home Page HTML Validator](readme-files/val-home2.png)
-After fixing that, the test returned no errors.
+The first test returned an error repeated 3 times. This was solved by removing the <button> element and adding a <div> instead. I also created .btn and .btn-link classes to fix the styling.
+The same issue was found in the instructions.html and vocabulary.html files and was solved the same way.
 
 - Instructions Page
+![Instructions Page HTML Validator](readme-files/val-home2.png)
 
-![Menu Page HTML Validator](readme-files/contactvalidator.png)
+- Refresh Vocabulary Page
+![Vocabulary Page HTML Validator](readme-files/val-home2.png)
 
-- About Page
+- Game Page
+![Game Page HTML Validator](readme-files/val-home2.png)
 
-![About Page HTML Validator](readme-files/aboutvalidator.png)
-
-The warning was ignored following design decisions.
-
-- Contact Page
-
-![Contact Page HTML Validator](readme-files/contactvalidator.png)
 
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/) : the test didn't find any errors.
@@ -56,6 +49,7 @@ Notes:
 
 - A
 ## Bugs 
+
 
 
 

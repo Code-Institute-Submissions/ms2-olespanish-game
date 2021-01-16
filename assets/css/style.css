@@ -45,6 +45,7 @@ article {
 .container {
   margin: 0 auto;
   padding: 20px;
+  max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +87,17 @@ button {
   border-radius: 15px;
   background-color: #FCFCFC;
   margin: 5px auto;
+  position: relative;
+}
+
+.btn-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5B5B5B;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu-btn {
@@ -125,6 +137,7 @@ button {
   height: 60px;
   font-family: 'Fascinate Inline', cursive;
   background-color: #f7aca829;
+  margin-bottom: 20px;
 }
 
 /* ---------- INDEX.HTML ---------- */
@@ -134,6 +147,7 @@ button {
   margin-bottom: 20px;
   padding-top: 50px;
   display: block;
+  min-height: 250px;
 }
 
 .main-title {
@@ -146,6 +160,7 @@ button {
   font-size: 90px;
   font-family: 'Fascinate Inline', cursive;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .subtitle {
@@ -159,7 +174,7 @@ button {
 
 .menu-container {
   background-image: url("../images/ole-bg.png");
-  border-color: 5px solid #FCFCFC;
+  border: 5px solid #FCFCFC;
   display: block;
 }
 
@@ -217,6 +232,10 @@ button {
   margin-bottom: 3rem;
 }
 
+.instructions-text {
+  padding: 20px;
+}
+
 .level-name {
   font-family: 'Fascinate Inline', cursive;
   font-size: 1.5em;
@@ -225,7 +244,7 @@ button {
 /* ---------- VOCABULARY.HTML ---------- */
 
 .vocab-element {
-  padding: 5px 0;
+  padding: 10px 3px;
 }
 
 .vocab-img {
@@ -237,7 +256,7 @@ button {
 
 .vocab-name {
   margin: 5px 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .vocab-sound {
@@ -248,7 +267,8 @@ button {
 }
 
 .vocab-sound:hover {
-  font-size: 150%;
+  font-size: 120%;
+  color: #F7ACA8;
 }
 
 /* ---------- GAME.HTML ---------- */
@@ -444,16 +464,16 @@ button {
     font-size: 0.7rem;
   }
   .container, .grid {
-    padding: 5px;
+    padding: 0px;
   }
   .main-title {
     font-size: 50px;
   }
   .heading-container {
-    margin-top: 12rem;
+    margin-top: 16rem;
   }
   .vocab-heading-container {
-    margin-top: 26rem;
+    margin-top: 30rem;
   }
   .top-container {
     height: 60px;
@@ -502,7 +522,7 @@ button {
     font-size: 70px;
   }
   .heading-container, .game-menu-area {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
   .card, .back, .front {
     height: 110px;

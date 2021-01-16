@@ -113,7 +113,7 @@ function startGame() {
 
   // Reset moves
   moves = 0;
-  movesCounter.innerText = `${moves}moves`;
+  movesCounter.innerText = `${moves}`;
 
   // Reset time
   timeCounter.innerHTML = '00:00';
@@ -198,7 +198,7 @@ grid.addEventListener('click', function clickCard(event) {
 
 function moveCounter() {
   moves++;
-  movesCounter.innerHTML = `${moves} move(s)`;
+  movesCounter.innerHTML = `${moves}`;
   
   if (moves == 1) {
     second = 0;
