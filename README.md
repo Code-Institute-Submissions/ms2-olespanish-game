@@ -29,9 +29,9 @@ This project’s main goals are:
 ###### Entertainment Goals
 - As a user, I’d like to have fun while playing an easy game.
 - As a user, I’d like a game that has simple but nice visuals, with easy recognisable pictures.
-- As a user playing for the first time, I'd the game structure to be obvious so I can start playing right away.
+- As a user playing for the first time, I'd like the game structure to be obvious so I can start playing right away.
 - As a user that doesn’t know how the game works, I'd like to be able to find the instructions easily.
-- As a competitive user, I’d like to know in how much time I completed the game.
+- As a competitive user, I’d like to know in how much time I completed the game and how many moves I needed.
 
 ###### Didactic Goals
 - As a teacher, I’d like a game where my students can learn while having fun.
