@@ -52,9 +52,8 @@ const cardsArray = [
   }
 ];
 
-let gameGrid = cardsArray.concat(cardsArray);
-console.log(gameGrid);
-gameGrid.sort(() => 0.5 - Math.random());
+let gameGrid = cardsArray.concat(cardsArray); // Duplicates array
+gameGrid.sort(() => 0.5 - Math.random()); // Randomize array
 
 
 let firstGuess = '';
@@ -144,10 +143,8 @@ const resetGuesses = function resetGuesses() {
 // Add event listener to grid
 grid.addEventListener('click', function clickCard(event) {
   let clicked = event.target; // The event target is our clicked item
-  
-  console.log(event.target.parentNode.getAttribute('data-audio'));
 
-  // Do not allow the grid section itself to be selected; only select divs inside the grid
+  // Only allow divs inside the grid to be selected
   if (
     clicked.nodeName === 'SECTION' || 
     clicked === previousTarget ||
@@ -166,13 +163,10 @@ grid.addEventListener('click', function clickCard(event) {
     if (count === 1) {
       // Assign first guess
       firstGuess = clicked.parentNode.dataset.name;
-      console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
-    //   clicked.parentNode.dataset.audio;
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name;
-      console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
     }
 
@@ -196,6 +190,7 @@ grid.addEventListener('click', function clickCard(event) {
   }
 });
 
+// Counts how many moves
 function moveCounter() {
   moves++;
   movesCounter.innerHTML = `${moves}`;
@@ -208,6 +203,7 @@ function moveCounter() {
   }
 }
 
+// Counts how much time
 function startTimer() {
   let timer = 0;
     if (timeStart === "") {
@@ -230,6 +226,7 @@ function stopTimer() {
   timeStart = '';
 }
 
+// Finish the game and show modal with total time and total moves
 function endGame() {
   stopTimer();
 
@@ -240,7 +237,7 @@ function endGame() {
   setTimeout(function() {
     modalEl.classList.add("show-modal"); 
 
-    // Show totalGameTime and moves
+    // Show total time and total moves
     totalGameMovesEl.innerHTML = moves;
     totalGameTimeEl.innerHTML = totalGameTime;
   }, 2000);
@@ -258,14 +255,7 @@ function closeModal() {
 
 function playAgain() {
   modalEl.classList.remove("show-modal");
-
   startGame();
 }
-
-// window.onload = function () {
-//   setTimeout(function() {
-//     startGame();
-//   }, 1000);
-// }
 
 startGame();

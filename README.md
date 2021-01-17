@@ -11,7 +11,7 @@ You can visit the deployed website [here](https://fernandagil.github.io/ms2-oles
 
 ## 1. UX
 
-#### 1.1. Project Goals
+### 1.1. Project Goals
 
 This game was designed for students of all ages learning the Spanish language (or just curious!). 
 It works like a simple memory game, with the difference that each picture has the name written on it
@@ -24,7 +24,7 @@ This project’s main goals are:
 - to strengthen memory
 - to have fun!
 
-#### 1.2. User Stories
+### 1.2. User Stories
 
 ###### Entertainment Goals
 - As a user, I’d like to have fun while playing an easy game.
@@ -39,16 +39,16 @@ This project’s main goals are:
 - As a student, I’d like to test the new vocabulary I learn in Spanish class while having fun in the process.
 - As a student, I’d like to hear the pronunciation of the words I’m learning.
 
-#### 1.3. Design Choices
+### 1.3. Design Choices
 
-- **Fonts**: As my project has a strong didactical factor, I decided to go with Nixie One for most of the text in the project because it’s a neat and easy to read font that I associate with old typewriters. To create the logo and to emphasize other pieces of text I used Fascinate Inline.
+- **Fonts**: as my project has a strong didactical factor, I decided to go with Nixie One for most of the text in the project because it’s a neat and easy to read font that I associate with old typewriters. To create the logo and to emphasize other pieces of text I used Fascinate Inline.
 - **Cards**: I chose the fruits as a topic for my cards because it’s one of the first things you learn when studying a new language. I thought this would make the game easier for people with basic or no Spanish knowledge. After choosing a background image to keep some consistency, I used [Canva](https://www.texttomp3.online/) to edit this background image with the vectors obtained from [Pixabay](https://pixabay.com/) to represent every word in the vocabulary.
-- **Audio files**: To generate every word’s pronunciation I used [Text 2 MP3](https://www.texttomp3.online/).
-- **Colours**: To keep consistency through the project, I first selected an [image](https://pixabay.com/es/illustrations/papel-digital-de-fondo-patr%C3%B3n-5049042/) to be the back of the cards, and from that image I created the colour palette.
+- **Audio files**: to generate every word’s pronunciation I used [Text 2 MP3](https://www.texttomp3.online/).
+- **Colours**: to keep consistency through the project, I first selected an [image](https://pixabay.com/es/illustrations/papel-digital-de-fondo-patr%C3%B3n-5049042/) to be the back of the cards, and from that image I created the colour palette.
 
 ![colour palette](readme-files/ms2-palette.png)
 
-#### 1.4. Wireframes
+### 1.4. Wireframes
 The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're accessible in the following links:
 
 |    Desktop   |    Tablet    |    Mobile    |
@@ -100,8 +100,9 @@ An idea to implement in the future would be adding a new level of difficulty. Th
 
 ## 3. Technologies used
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5) - provides the content and structure for my website.
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - provides the styling.
+- [HTML5](https://html.com/) - provides the content and structure for my website.
+- [CSS3](http://www.css3.info/) - provides the styling.
+- [JavaScript](https://www.javascript.com/) - provides the functionality and interaction.
 - [Bootstrap](https://getbootstrap.com/) - used to create the layout of the project.
 - [Balsamiq](https://balsamiq.com/) - used to create the project's wireframes.
 - [Gitpod](https://gitpod.io/) - used to develop the website.
@@ -166,6 +167,7 @@ The sound effects were implemented with help from [Button Sound Effects Tutorial
 The basic game functionalities were creating following the tutorials from [Tania Rascia](https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/) 
 and [Michelle Aniuchi](https://aadaobi.medium.com/building-a-memory-matching-game-in-javascript-48e792c7b563).
 
+I created the timer functionality following [Jade O'Sullivan Memory Game](https://github.com/Jadeosull93/memorygame) and adapting it to my project's requisites.
 
 ### 6.2. Media
 
