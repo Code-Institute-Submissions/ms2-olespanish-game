@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <!-- AUDIO DIV (HIDDEN) -->
     <audio id="sounds">   
       <source src="assets/audio/coco.mp3" />   
     </audio>
@@ -20,8 +21,11 @@
       <h1 class="title"><a href="index.html">¡Olé Spanish!</a></h1>
     </div>
       
+    <!-- GAME -->
     <article class="game-container">
       <div class="row">
+
+        <!-- GAME MENU -->
         <div class="col-lg-2 mx-auto no-gutters game-menu-area shadow mt-lg-0 align-self-center">
           <div class="container">
             <div class="row">
@@ -40,6 +44,7 @@
           </div>
         </div>
 
+        <!-- GAME GRID -->
         <div class="col-lg-10 mx-auto no-gutters game-grid-area shadow">
           <div id="game" class="container">
           </div>
@@ -47,6 +52,7 @@
       </div>
     </article>
 
+    <!-- GAME OVER MODAL -->
     <div class="modal" id="game-over-modal">
       <div class="modal-content shadow">
         <span aria-label="close" role="button" class="close" id="close-modal">&times;</span>

@@ -102,7 +102,7 @@ function startGame() {
     // Create front of card
     const front = document.createElement('div');
     front.classList.add('front');
-    front.style.backgroundImage = `url(${item.img})`;
+    front.style.backgroundImage = `url(${img})`;
 
     // Append card to grid, and front and back to each card
     grid.appendChild(card);
@@ -126,7 +126,7 @@ const match = function match() {
     card.classList.add('match');
     card.style.pointerEvents = 'none';
   });
-}
+};
 
 const resetGuesses = function resetGuesses() {
   firstGuess = '';
@@ -138,7 +138,7 @@ const resetGuesses = function resetGuesses() {
   selected.forEach(function (card) {
     card.classList.remove('selected');
   });
-}
+};
 
 // Add event listener to grid
 grid.addEventListener('click', function clickCard(event) {

@@ -2,7 +2,6 @@
 
 ![¡Olé Spanish!](readme-files/ms2-amiresponsive.png)
 
-
 ¡Olé Spanish! memory game is a great way to practice Spanish vocabulary while having fun. This memory game will test both your vocabulary and your memory.
 
 You can visit the deployed website [here](https://fernandagil.github.io/ms2-olespanish-game/).
@@ -15,7 +14,7 @@ You can visit the deployed website [here](https://fernandagil.github.io/ms2-oles
 
 This game was designed for students of all ages learning the Spanish language (or just curious!). 
 It works like a simple memory game, with the difference that each picture has the name written on it
-and the words pronunciation for a better learning experience.
+and the word's pronunciation for a better learning experience.
 
 This game was also designed for anybody without prior Spanish knowledge or interest, since it's not a requisite to play the game and have a good time.
 
@@ -31,7 +30,7 @@ This project’s main goals are:
 - As a user, I’d like a game that has simple but nice visuals, with easy recognisable pictures.
 - As a user playing for the first time, I'd like the game structure to be obvious so I can start playing right away.
 - As a user that doesn’t know how the game works, I'd like to be able to find the instructions easily.
-- As a competitive user, I’d like to know in how much time I completed the game and how many moves I needed.
+- As a competitive user, I’d like to know how much time I needed to complete the game and how many moves I needed.
 
 ###### Didactic Goals
 - As a teacher, I’d like a game where my students can learn while having fun.
@@ -86,6 +85,7 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 - **Timer**: times how long it takes to finish the game starting from the first move.
 - **Moves counter**: counts how many moves the user needs to finish the game. 
 - **Exit button**: allows the user to interrupt the game and go back to the Home Page.
+- **Cards grid**: allows the user to play the game.
 
 **Game Over Modal** that displays once the user has matched all the cards. It includes:
 - **Exit button**: closes the modal.
@@ -95,6 +95,8 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 ### 2.2. Potential Features
 
 An idea to implement in the future would be adding a new level of difficulty. This new level would consist in matching an image with its name, following the memory game structure. This would be exclusive for students that already have some knowledge of Spanish. 
+
+Another idea would be saving every user's time and moves and do a scoreboard.
 
 ---
 
@@ -109,14 +111,15 @@ An idea to implement in the future would be adding a new level of difficulty. Th
 - [GitHub](https://github.com/) - used to host the project.
 - [Google Fonts](https://fonts.google.com/) - used to provide the fonts Nixie One for the main text, and Fascinate Inline for some headers.
 - [Font Awesome](https://fontawesome.com/) - used the Font Awesome icons to hear the voice clip in the Refresh Vocabulary page.
-- [Canva](https://www.canva.com/) - used to design all the cards for all levels, the game's logo and icon.
+- [Canva](https://www.canva.com/) - used to design all the cards, the game's logo and icon.
 - [Favicon](https://www.favicon-generator.org//) - used to create the icon from the design made with Canva.
 - [Pixabay](https://pixabay.com/) - used to get images for the project.
 - [TinyJPG](https://tinyjpg.com/) - used to compress the size of the images and icon before making it a Favicon.
 - [HTML Color Codes](https://html-color-codes.info/): to select colours codes from an image to create the website's colour palette.
 - [Text 2 MP3](https://www.texttomp3.online/): to generate the vocabulary words' pronunciation.
-- [Coolors.co](https://coolors.co/): to generate color palette for the project.
+- [Coolors.co](https://coolors.co/): to generate the color palette for the project.
 - [Autoprefixer](https://autoprefixer.github.io/) - used to parsethe CSS and to add vendor prefixes to CSS rules.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - used to show in a quick visual way the responsiveness of the site.
 
 ---
 
@@ -176,4 +179,12 @@ The pictures used in this site were all obtained from [Pixabay](https://pixabay.
 [OpenClipart-Vectors](https://pixabay.com/es/users/openclipart-vectors-30363/) and
 [Clker-Free-Vector-Images](https://pixabay.com/es/users/clker-free-vector-images-3736/).
 
+They were edited using [Canva](https://www.canva.com/).
+
 ### 6.1. Acknowledgments
+
+I would like to thank my Code Institute Mentor [Precious Ijege]() for his advice and guidance on the project.
+
+The Code Institute Tutor Team, Samantha, Scott, Stephen and specially Johann, who were very patient every time I needed guidance.
+
+Emmet, Des and Marina, who encouraged me through the process and tested the project as many times as I needed.
