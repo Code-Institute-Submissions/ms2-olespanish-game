@@ -27,9 +27,14 @@ The test returned some warnings related to some browser cross-compatibility. The
 
 [JSHint](https://jigsaw.w3.org/css-validator/) : 
 
-does not affect the integrity of the game state.
+- audio.js file
+The test returned no errors or warnings.
 
-![JSHint](readme-files/)
+- script.js file
+
+The test just returned one unused variable `playAgain()` that is a function called from outside the **script.js** file, when the *Play Again* button is clicked in the game over modal.
+
+---
 
 ## Responsiveness
 
@@ -60,7 +65,7 @@ There are some styling issues when using IE. The effect text gradient I implemen
 Other minor issues include the background color of the buttons that is supposed to be semi-transparent or the time and moves counter in the game page that are not properly centered.
 ![Internet Explorer bug](readme-files/ie-bug1.png)
 
-The website renders properly on IE but when you click on play, you can see an empty grid with no cards making the game unplayable on this browser.
+The website renders properly on IE but when you click on play, you can see an empty grid with no cards, making the game unplayable on this browser.
 ![Internet Explorer bug](readme-files/ie-bug2.png)
 
 ---
