@@ -52,10 +52,10 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/). They're ac
 
 |    Desktop   |    Tablet    |    Mobile    |
 |    :----:    |     :----:   |    :----:    |
-|[Home Page](readme-files/wireframes/desktop-home.jpg)|[Home Page](readme-files/wireframes/tablet-home.jpg)|[Home Page](readme-files/wireframes/mobile-home.jpg)|
-|[Instructions Page](readme-files/wireframes/desktop-instructions.jpg)|[Instructions Page](readme-files/wireframes/tablet-instructions.jpg)|[Instructions Page](readme-files/wireframes/mobile-instructions.jpg)|
-|[Refresh Vocabulary Page](readme-files/wireframes/desktop-vocabulary.jpg)|[Refresh Vocabulary Page](readme-files/wireframes/tablet-vocabulary.jpg)|[Refresh Vocabulary Page](readme-files/wireframes/mobile-vocabulary.jpg)|
-|[Game Page](readme-files/wireframes/desktop-game.jpg)|[Game Page](readme-files/wireframes/tablet-game.jpg)|[Game Page](readme-files/wireframes/mobile-game.jpg)|
+|[Home Page](wireframes/desktop-home.jpg)|[Home Page](wireframes/tablet-home.jpg)|[Home Page](wireframes/mobile-home.jpg)|
+|[Instructions Page](wireframes/desktop-instructions.jpg)|[Instructions Page](wireframes/tablet-instructions.jpg)|[Instructions Page](wireframes/mobile-instructions.jpg)|
+|[Refresh Vocabulary Page](wireframes/desktop-vocabulary.jpg)|[Refresh Vocabulary Page](wireframes/tablet-vocabulary.jpg)|[Refresh Vocabulary Page](wireframes/mobile-vocabulary.jpg)|
+|[Game Page](wireframes/desktop-game.jpg)|[Game Page](wireframes/tablet-game.jpg)|[Game Page](wireframes/mobile-game.jpg)|
 
 ---
 
@@ -187,4 +187,4 @@ I would like to thank my Code Institute Mentor [Precious Ijege]() for his advice
 
 The Code Institute Tutor Team, Samantha, Scott, Stephen and specially Johann, who were very patient every time I needed guidance.
 
-Emmet, Des and Marina, who encouraged me through the process and tested the project as many times as I needed.
+Emmet, Des, Fati and Marina, who encouraged me through the process and tested the project as many times as I needed.
